@@ -14,15 +14,15 @@ I use Firefox as my main browser. I like to have a clean start page, but I also 
 
 I have a server running at home so I first used the work of [benphelps](https://github.com/benphelps/homepage) to get it. Though when you have a laptop you ought to move it around and then the page crashes because it can't reach the server.
 
-So I decided to make a static version of the homepage. I heavily modified the original look and feel to my liking so the homepage merge perfectly with my [theme](https://github.com/gh0stzk/dotfiles/tree/master/misc/firefox).
+So I decided to make a static version of the homepage. I heavily modified the original look and feel to my liking so the homepage merges perfectly with my [theme](https://github.com/gh0stzk/dotfiles/tree/master/misc/firefox).
 
 ## Installation
 
 1. Clone this repository (somewhere it won't bother you. I use `~/mozilla/homepage/`)
 2. Open `index.html` in your browser
 3. Copy the URL of the page
-4. Set the URL as your homepage in your browser (e.g. in [Firefox](about:preferences#general)).
-5. (Optional) Set the URL as your new tab page in your browser (e.g. in [Firefox](about:preferences#general)).
+4. Set the URL as your homepage in your browser.
+5. (Optional) Set the URL as your new tab page in your browser.
 
 ## Configuration
 
