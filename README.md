@@ -52,6 +52,16 @@ Here is the format:
 }
 ```
 
+## More
+
+If you want to keep the color sheme over other pages, you can find the settings for the **Dark-Reader** extension in `./shared/Dark-Reader-Settings.json`:
+
+* Install the [Dark-Reader](https://addons.mozilla.org/en-US/firefox/addon/darkreader/) extension if not already installed.
+* Open the extension settings.
+* Click on the **Manage settings** button.
+* Click on the **Import** button.
+* Select the `Dark-Reader-Settings.json` file.
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
