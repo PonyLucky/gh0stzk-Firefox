@@ -1,0 +1,54 @@
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+    text-decoration: none;
+
+    & > * {
+        display: contents;
+    }
+    & > form {
+        display: flex;
+        justify-content: space-around;
+        background-color: $bg-active;
+        color: $text-active;
+
+        & > * {
+            border: none;
+            fill: white;
+            padding: 0.5rem;
+        }
+        & > input {
+            &::placeholder {
+                color: $text-active;
+                opacity: 1 !important;
+            }
+            &:focus {
+                outline: none;
+            }
+        }
+        & > button {
+            display: flex;
+            align-items: center;
+
+            & > svg {
+                height: 1.5rem;
+                width: 1.5rem;
+            }
+            &:hover {
+                background-color: $bg-inactive;
+            }
+            &:focus {
+                outline: none;
+                cursor: pointer;
+            }
+        }
+    }
+    & > #time {
+        display: flex;
+        align-items: center;
+        font-size: 1.2rem;
+    }
+}

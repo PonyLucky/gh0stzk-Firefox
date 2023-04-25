@@ -1,0 +1,21 @@
+// Variables
+@import 'variables';
+
+// Main
+* {
+    background-color: transparent !important;
+    margin: 0;
+    padding: 0;
+    // Scrollbar
+    scrollbar-color: $scrollbar;
+}
+body {
+    background-color: $bg-primary;
+    color: $text-primary;
+    // Full window
+    height: 100vh;
+    width: 100vw;
+}
+
+// Navbar
+@import 'nav';
