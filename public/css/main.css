@@ -10,14 +10,17 @@ body {
   color: #b8bfe5;
   height: 100vh;
   width: 100vw;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 
 nav {
   display: flex;
   justify-content: center;
   gap: 1rem;
-  padding: 1rem;
   padding-top: 3rem;
+  padding-bottom: 1rem;
   text-decoration: none;
 }
 nav > * {
@@ -48,6 +51,7 @@ nav > form > input:focus {
 nav > form > button {
   display: flex;
   align-items: center;
+  transition: background-color 0.2s ease-in-out;
 }
 nav > form > button > svg {
   height: 1.5rem;
