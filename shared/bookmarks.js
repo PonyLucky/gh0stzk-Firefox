@@ -1,24 +1,18 @@
 const BOOKMARKS = [
     {
-        "category": "Development",
+        "category": "Learn",
         "links": [
             {
                 "name": "MDN Web Docs",
                 "url": "https://developer.mozilla.org/en-US/",
                 "description": "Provides documentation about Open Web technologies including HTML, CSS, and APIs for both Web sites and progressive web apps.",
-                "icon": "https://developer.mozilla.org/static/img/opengraph-logo.72382e605ce3.png"
+                "icon": "./public/img/mdn.png"
             },
             {
                 "name": "W3Schools",
                 "url": "https://www.w3schools.com/",
                 "description": "Optimized for learning, testing, and training. Examples might be simplified to improve reading and basic understanding.",
-                "icon": "https://www.w3schools.com/favicon.ico"
-            },
-            {
-                "name": "GitHub",
-                "url": "https://www.github.com/",
-                "description": "Hosting service for version control using Git.",
-                "icon": "https://github.githubassets.com/favicons/favicon.svg"
+                "icon": "./public/img/w3schools.svg"
             }
         ]
     },
@@ -29,20 +23,37 @@ const BOOKMARKS = [
                 "name": "Youtube",
                 "url": "https://www.youtube.com/",
                 "description": "Video sharing website.",
-                "icon": "https://www.youtube.com/s/desktop/8b9c1b1c/img/favicon_32.png"
+                "icon": "./public/img/youtube.svg"
             },
             {
                 "name": "Twitch",
                 "url": "https://www.twitch.tv/",
                 "description": "Live streaming platform.",
-                "icon": "https://static.twitchcdn.net/assets/favicon-32-d6025c14e900565d6177.png"
+                "icon": "./public/img/twitch.svg"
             },
             {
-                "name": "Prime Video",
-                "url": "https://www.primevideo.com/",
-                "description": "Video streaming service.",
-                "icon": "https://images-na.ssl-images-amazon.com/images/G/01/digital/video/avod/AV_Logo_150._CB430404257_.png"
+                "name": "Emby",
+                "url": "http://192.168.1.105:8096/",
+                "description": "Media server.",
+                "icon": "./public/img/emby.svg"
             }
         ]
-    }
+    },
+    {
+        "category": "Code",
+        "links": [
+            {
+                "name": "GitHub",
+                "url": "https://www.github.com/",
+                "description": "Hosting service for version control using Git.",
+                "icon": "./public/img/github.svg"
+            },
+            {
+                "name": "Gitea",
+                "url": "http://192.168.1.105:3000/",
+                "description": "Self-Hosted service for version control using Git.",
+                "icon": "./public/img/gitea.svg"
+            }
+        ]
+    },
 ]

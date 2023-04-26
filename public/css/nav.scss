@@ -1,10 +1,9 @@
 nav {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     gap: 1rem;
     padding-top: 3rem;
-    padding-bottom: 1rem;
-    text-decoration: none;
 
     & > * {
         display: contents;
@@ -14,6 +13,7 @@ nav {
         justify-content: space-around;
         background-color: $bg-active;
         color: $text-active;
+        flex: 1;
 
         & > * {
             border: none;
@@ -21,6 +21,8 @@ nav {
             padding: 0.5rem;
         }
         & > input {
+            flex: 1;
+
             &::placeholder {
                 color: $text-active;
                 opacity: 1 !important;
@@ -39,7 +41,7 @@ nav {
                 width: 1.5rem;
             }
             &:hover {
-                background-color: $bg-inactive;
+                background-color: $bg-focus;
             }
             &:focus {
                 outline: none;
@@ -48,8 +50,25 @@ nav {
         }
     }
     & > #time {
-        display: flex;
-        align-items: center;
-        font-size: 1.2rem;
+        display: block;
+        font-size: 2rem;
+        text-align: center;
+    }
+}
+
+// Media - on tablet and PC
+@media (min-width: 768px) {
+    nav {
+        flex-direction: row;
+        & > form {
+            width: 30%;
+            // Move to first position
+            order: -1;
+        }
+        & > #time {
+            display: flex;
+            align-items: center;
+            font-size: 1.2rem;
+        }
     }
 }

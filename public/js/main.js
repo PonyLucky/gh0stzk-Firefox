@@ -2,6 +2,7 @@
 window.onload = function() {
     main();
     nav();
+    bookmarks();
 }
 
 // Main function

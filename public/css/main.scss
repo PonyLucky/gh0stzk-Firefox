@@ -8,6 +8,9 @@
     padding: 0;
     // Scrollbar
     scrollbar-color: $scrollbar;
+    scroll-behavior: smooth;
+    // Text decoration
+    text-decoration: none;
 }
 body {
     background-color: $bg-primary;
@@ -17,7 +20,36 @@ body {
     width: 100vw;
     // Text not selectable
     user-select: none;
+
+    // Center content
+    display: flex;
+    flex-flow: column;
+
+    & > * {
+        margin: 0 auto;
+        width: 80%;
+    }
+}
+main {
+    padding-bottom: 2rem;
+
+    & > hr {
+        border: 0;
+        border-top: 1px solid rgba($text-primary, 1.0);
+        margin: 2rem 0;
+    }
+}
+
+// Media - on tablet and PC
+@media (min-width: 768px) {
+    body {
+        & > * {
+            width: 60%;
+        }
+    }
 }
 
 // Navbar
 @import 'nav';
+// bookmarks
+@import 'bookmarks';

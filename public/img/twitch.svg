@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg fill="#FFFFFF" viewBox="0 0 50 50" width="50px" height="50px" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="25" y1="1" x2="25" y2="49" id="gradient-0" spreadMethod="pad">
+      <stop offset="0" style="stop-color: rgba(169, 94, 209, 1)"/>
+      <stop offset="1" style="stop-color: rgba(117, 45, 156, 1)"/>
+    </linearGradient>
+  </defs>
+  <path d="M 10.782 5.375 L 42.334 5.375 L 42.334 29.707 L 36.8 34.414 L 19.684 39.368 L 11.036 33.905 L 10.782 5.375 Z" style=""/>
+  <path d="M 5.313 1 L 5.063 1.656 L 2.063 9.656 L 2 9.813 L 2 43 L 13 43 L 13 49 L 20.406 49 L 20.719 48.719 L 26.438 43 L 35.406 43 L 35.719 42.719 L 48 30.438 L 48 1 L 5.313 1 Z M 6.688 3 L 46 3 L 46 29.594 L 34.594 41 L 25.594 41 L 19.594 47 L 15 47 L 15 41 L 4 41 L 4 10.188 L 6.688 3 Z M 6.279 2.137 L 2.931 9.921 L 3.384 41.838 L 14.342 41.775 L 14.183 47.845 L 19.973 47.716 L 25.915 41.838 L 34.702 41.711 L 39.755 36.691 L 46.2 30.405 L 46.831 27.452 L 46.513 2.646 L 6.279 2.137 Z M 12 7 L 42 7 L 42 27.563 L 36.563 33 L 24.594 33 L 24.281 33.281 L 20 37.563 L 20 33 L 12 33 L 12 7 Z M 20 13 L 20 27 L 26 27 L 26 13 L 20 13 Z M 30 13 L 30 27 L 36 27 L 36 13 L 30 13 Z M 24.513 25.623 L 24 15 L 24 25 L 22 25 L 24.513 25.623 Z M 34.672 25.751 L 34 15 L 34 25 L 32 25 L 34.672 25.751 Z" style="fill-rule: nonzero; paint-order: fill; fill: url(#gradient-0);"/>
+</svg>

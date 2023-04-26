@@ -1,7 +1,10 @@
 $bg-primary: #14171c !important;
-$text-primary: #b8bfe5;
-$scrollbar: #4d4168 #1b1f26 !important;
-
+$bg-secondary: hsla(0, 0%, 100%, .05) !important;
 $bg-active: #4d4168 !important;
-$bg-inactive: #3d3158 !important;
+$bg-focus: #3d3158 !important;
+
+$text-primary: #b8bfe5;
+$text-secondary: #d3bfff;
 $text-active: white;
+
+$scrollbar: #4d4168 #1b1f26 !important;
