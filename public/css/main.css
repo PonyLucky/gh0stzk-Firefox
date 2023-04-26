@@ -118,6 +118,9 @@ section#bookmarks {
   gap: 0.5rem 0.25rem;
   margin-top: -0.75rem;
 }
+section#bookmarks > div.category {
+  width: 100%;
+}
 section#bookmarks > div.category > h2 {
   color: #d3bfff;
   font-size: 1.5rem;

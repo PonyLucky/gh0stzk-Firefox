@@ -8,6 +8,8 @@ section#bookmarks {
     margin-top: -.75rem;
 
     & > div.category {
+        width: 100%;
+
         & > h2 {
             color: $text-secondary;
             font-size: 1.5rem;
