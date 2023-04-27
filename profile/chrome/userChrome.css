@@ -84,9 +84,9 @@
     min-width: 200px !important;
 }
 
-hbox.tab-content .tab-icon-image {
+/* hbox.tab-content .tab-icon-image {
   display: none !important;
-}
+} */
 
 .tabbrowser-tab {
   border-radius: var(--z0mbi3-tab-border-radius) !important;
