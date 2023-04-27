@@ -68,7 +68,7 @@ nav > form {
 }
 nav > form > * {
   border: none;
-  fill: white;
+  fill: var(--homepage-text-active);
   padding: 0.5rem;
 }
 nav > form > input {

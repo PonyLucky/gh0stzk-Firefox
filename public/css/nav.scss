@@ -17,7 +17,7 @@ nav {
 
         & > * {
             border: none;
-            fill: white;
+            fill: var(--homepage-text-active);
             padding: 0.5rem;
         }
         & > input {

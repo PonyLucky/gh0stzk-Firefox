@@ -9,7 +9,7 @@ function nav() {
         // tick ":" if pulse is true
         let tick = pulse ? ":" : " ";
         // Set time
-        timeElement.innerHTML = hours + tick + minutes;
+        timeElement.innerText = hours + tick + minutes;
         // Invert pulse
         pulse = !pulse;
     }

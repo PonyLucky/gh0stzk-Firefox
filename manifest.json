@@ -1,0 +1,43 @@
+{
+    "manifest_version": 2,
+    "name": "gh0stzk's homepage",
+    "short_name": "gh0stzk's homepage",
+    "version": "1.0",
+    "description": "An homepage for your browser (color sheme by gh0stzk)",
+    "author": "PonyLucky",
+    "homepage_url": "https://github.com/PonyLucky",
+
+    "icons": {
+        "48": "public/img/icons/icon-48.png",
+        "128": "public/img/icons/icon-128.png",
+        "256": "public/img/icons/icon-256.png",
+        "512": "public/img/icons/icon-512.png"
+    },
+
+    "chrome_url_overrides": {
+		"newtab": "index.html"
+	},
+
+	"chrome_settings_overrides": {
+		"homepage": "index.html"
+	},
+
+    "browser_action": {
+		"default_title": "gh0stzk's homepage",
+		"default_icon": {
+            "48": "public/img/icons/icon-48.png",
+            "128": "public/img/icons/icon-128.png",
+            "256": "public/img/icons/icon-256.png",
+            "512": "public/img/icons/icon-512.png"
+		},
+		"browser_style": true
+	},
+
+    "permissions": ["storage"],
+
+    "browser_specific_settings": {
+		"gecko": {
+			"id": "gomepage@example.com"
+		}
+	}
+}
