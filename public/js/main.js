@@ -3,6 +3,9 @@ window.onload = function() {
     main();
     nav();
     bookmarks();
+
+    // Handle theme button
+    document.getElementById("theme").addEventListener("click", changeTheme);
 }
 
 // Main function

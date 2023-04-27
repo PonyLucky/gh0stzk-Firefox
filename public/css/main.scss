@@ -7,14 +7,14 @@
     margin: 0;
     padding: 0;
     // Scrollbar
-    scrollbar-color: $scrollbar;
+    scrollbar-color: var(--homepage-scrollbar);
     scroll-behavior: smooth;
     // Text decoration
     text-decoration: none;
 }
 body {
-    background-color: $bg-primary;
-    color: $text-primary;
+    background-color: var(--homepage-bg-primary) !important;
+    color: var(--homepage-text-primary);
     // Full window
     height: 100vh;
     width: 100vw;
@@ -35,7 +35,7 @@ main {
 
     & > hr {
         border: 0;
-        border-top: 1px solid rgba($text-primary, 1.0);
+        border-top: 1px solid rgba(var(--homepage-text-primary-rgb), 1.0);
         margin: 2rem 0;
     }
 }
@@ -53,3 +53,5 @@ main {
 @import 'nav';
 // bookmarks
 @import 'bookmarks';
+// footer
+@import 'footer';

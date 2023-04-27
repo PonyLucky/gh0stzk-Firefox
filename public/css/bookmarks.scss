@@ -11,7 +11,7 @@ section#bookmarks {
         width: 100%;
 
         & > h2 {
-            color: $text-secondary;
+            color: var(--homepage-text-secondary);
             font-size: 1.5rem;
             font-weight: 500;
             padding: .75rem;
@@ -26,7 +26,7 @@ section#bookmarks {
             gap: 1rem;
 
             & > li {
-                background-color: $bg-secondary;
+                background-color: var(--homepage-bg-secondary) !important;
                 border-radius: 0.5rem;
                 display: flex;
                 flex-flow: row;
@@ -61,12 +61,12 @@ section#bookmarks > div.category > ul > li > a {
     }
     & > div.content {
         & > p {
-            color: $text-primary;
+            color: var(--homepage-text-primary);
             font-size: 0.8rem;
             font-weight: 500;
         }
         & > p.title {
-            color: $text-active;
+            color: var(--homepage-text-active);
             font-size: 1.2rem;
             font-weight: 500;
         }

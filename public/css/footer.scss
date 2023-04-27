@@ -1,0 +1,17 @@
+footer {
+    position: fixed;
+    bottom: 0.5rem;
+    left: 0.5rem;
+    z-index: 1;
+
+    & > button#theme {
+        outline: none;
+        border: none;
+        cursor: pointer;
+
+        & > img {
+            height: 1.5rem;
+            width: 1.5rem;
+        }
+    }
+}

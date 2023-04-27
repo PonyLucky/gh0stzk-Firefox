@@ -1,22 +1,5 @@
 const BOOKMARKS = [
     {
-        "category": "Learn",
-        "links": [
-            {
-                "name": "MDN Web Docs",
-                "url": "https://developer.mozilla.org/en-US/",
-                "description": "Provides documentation about Open Web technologies including HTML, CSS, and APIs for both Web sites and progressive web apps.",
-                "icon": "./public/img/mdn.png"
-            },
-            {
-                "name": "W3Schools",
-                "url": "https://www.w3schools.com/",
-                "description": "Optimized for learning, testing, and training. Examples might be simplified to improve reading and basic understanding.",
-                "icon": "./public/img/w3schools.svg"
-            }
-        ]
-    },
-    {
         "category": "Fun",
         "links": [
             {
@@ -36,6 +19,23 @@ const BOOKMARKS = [
                 "url": "http://192.168.1.105:8096/",
                 "description": "Media server.",
                 "icon": "./public/img/emby.svg"
+            }
+        ]
+    },
+    {
+        "category": "Learn",
+        "links": [
+            {
+                "name": "MDN Web Docs",
+                "url": "https://developer.mozilla.org/en-US/",
+                "description": "Provides documentation about Open Web technologies including HTML, CSS, and APIs for both Web sites and progressive web apps.",
+                "icon": "./public/img/mdn.png"
+            },
+            {
+                "name": "W3Schools",
+                "url": "https://www.w3schools.com/",
+                "description": "Optimized for learning, testing, and training. Examples might be simplified to improve reading and basic understanding.",
+                "icon": "./public/img/w3schools.svg"
             }
         ]
     },

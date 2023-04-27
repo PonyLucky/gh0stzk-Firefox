@@ -11,8 +11,8 @@ nav {
     & > form {
         display: flex;
         justify-content: space-around;
-        background-color: $bg-active;
-        color: $text-active;
+        background-color: var(--homepage-bg-active) !important;
+        color: var(--homepage-text-active);
         flex: 1;
 
         & > * {
@@ -24,7 +24,7 @@ nav {
             flex: 1;
 
             &::placeholder {
-                color: $text-active;
+                color: var(--homepage-text-active);
                 opacity: 1 !important;
             }
             &:focus {
@@ -41,7 +41,7 @@ nav {
                 width: 1.5rem;
             }
             &:hover {
-                background-color: $bg-focus;
+                background-color: var(--homepage-bg-focus) !important;
             }
             &:focus {
                 outline: none;
