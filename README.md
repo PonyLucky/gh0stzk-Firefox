@@ -4,10 +4,27 @@ This is my Firefox configuration. It is based on [gh0stzk](https://github.com/gh
 
 ## Installation
 
-1. Install the theme from [addons.mozilla.org](https://addons.mozilla.org/en-US/firefox/addon/gh0stzk-s-firefox/)
-2. Install the extension from [addons.mozilla.org](https://addons.mozilla.org/en-US/firefox/addon/gh0stzk-s-firefox-extension/)
-3. Install the [Dark-Reader](https://addons.mozilla.org/en-US/firefox/addon/darkreader/) extension.
-4. Open the extension settings.
-5. Click on the **Manage settings** button.
-6. Click on the **Import** button.
-7. Select the `./dark-reader/Dark-Reader-Settings.json` file.
+### 1) Theme
+
+Install the theme from [addons.mozilla.org](https://addons.mozilla.org/fr/firefox/addon/gh0stzk-s-theme/)
+
+### 2) Extension
+
+Install the extension from [addons.mozilla.org](https://addons.mozilla.org/fr/firefox/addon/gh0stzk-s-homepage/)
+
+### 3) Dark Reader
+
+* Install the [Dark-Reader](https://addons.mozilla.org/en-US/firefox/addon/darkreader/) extension.
+* Open the extension settings.
+* Click on the **Manage settings** button.
+* Click on the **Import** button.
+* Select the `./darkreader/Dark-Reader-Settings.json` file.
+
+### 4) UserChrome
+
+* Open the `about:config` page.
+* Search for `toolkit.legacyUserProfileCustomizations.stylesheets` and set it to `true` (the button on the right).
+* Open the `about:profiles` page.
+* Click on the **Open Folder** button.
+* Copy the **content** of `profile/chrome` folder to the opened folder.
+* Restart Firefox.

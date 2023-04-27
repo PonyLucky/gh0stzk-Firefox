@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
-    "name": "gh0stzk's homepage",
-    "short_name": "gh0stzk's homepage",
+    "name": "gh0stzk's Firefox",
+    "short_name": "gh0stzk's Firefox",
     "version": "1.0",
     "description": "An homepage for your browser (color sheme by gh0stzk)",
     "author": "PonyLucky",
@@ -23,7 +23,7 @@
 	},
 
     "browser_action": {
-		"default_title": "gh0stzk's homepage",
+		"default_title": "gh0stzk's Firefox",
 		"default_icon": {
             "48": "public/img/icons/icon-48.png",
             "128": "public/img/icons/icon-128.png",
@@ -37,7 +37,7 @@
 
     "browser_specific_settings": {
 		"gecko": {
-			"id": "gomepage@example.com"
+			"id": "gh0stzk-s-firefox@example.com"
 		}
 	}
 }
