@@ -77,8 +77,12 @@
                     border-radius: 0.5rem;
                     padding: 0.5rem 1rem;
                     width: -moz-available;
-                    height: 10rem;
+                    height: 20rem;
+                    max-height: 100%;
                     resize: none;
+                    outline: none;
+                    // Thin scrollbar
+                    scrollbar-width: thin;
                 }
                 & > button {
                     margin-top: 0.5rem;

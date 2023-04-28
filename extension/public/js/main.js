@@ -37,4 +37,5 @@ function handlers() {
     document.getElementById("settings-theme-switch").addEventListener("click", changeTheme);
     document.getElementById("settings-search").addEventListener("click", changeSearchEngine);
     document.getElementById("settings-bookmarks").addEventListener("click", displayBookmarksEditor);
+    document.getElementById("settings-bookmarks-save").addEventListener("click", saveBookmarksEditor);
 }

@@ -3,6 +3,8 @@ function bookmarks() {
     const bookmarks = document.getElementById("bookmarks");
     // Set base img dir
     const imgDir = "./public/img/website/";
+    // Clear bookmarks
+    bookmarks.innerHTML = "";
     // Loop through BOOKMARKS
     for (let i = 0; i < BOOKMARKS.length; i++) {
         let category = BOOKMARKS[i].category;

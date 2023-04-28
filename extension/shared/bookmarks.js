@@ -1,4 +1,4 @@
-const BOOKMARKS = [
+var BOOKMARKS = [
     {
         "category": "Fun",
         "links": [
