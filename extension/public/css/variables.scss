@@ -1,6 +1,7 @@
 :root{
     --homepage-bg-primary: #14171c;
     --homepage-bg-secondary: hsla(0, 0%, 100%, .05);
+    --homepage-bg-tertiary: hsla(0, 0%, 0%, .75);
     --homepage-bg-active: #4d4168;
     --homepage-bg-focus: #3d3158;
 
@@ -8,6 +9,8 @@
     --homepage-text-primary-rgb: 184, 191, 229;
     --homepage-text-secondary: #d3bfff;
     --homepage-text-active: white;
+    --homepage-text-error: #ff4d4d;
+    --homepage-text-success: #4dff4d;
 
     --homepage-scrollbar: #4d4168 #1b1f26;
 }

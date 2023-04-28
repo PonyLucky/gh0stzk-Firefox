@@ -18,7 +18,6 @@
         cursor: pointer;
 
         &:hover {
-            background-color: var(--homepage-bg-secondary);
             color: var(--homepage-text-secondary);
             fill: var(--homepage-text-secondary);
         }
@@ -29,6 +28,11 @@
                 position: relative;
                 top: -0.40rem;
             }
+        }
+        &.active {
+            background-color: var(--homepage-bg-focus) !important;
+            color: var(--homepage-text-active);
+            fill: var(--homepage-text-active);
         }
     }
     & select > option {
@@ -78,16 +82,49 @@
                     padding: 0.5rem 1rem;
                     width: -moz-available;
                     height: 20rem;
-                    max-height: 100%;
-                    resize: none;
+                    max-height: -moz-available;
+                    transition: none;
                     outline: none;
                     // Thin scrollbar
                     scrollbar-width: thin;
                 }
                 & > button {
                     margin-top: 0.5rem;
+
+                    &.error {
+                        color: var(--homepage-text-error);
+                        fill: var(--homepage-text-error);
+                    }
+                    &.success {
+                        color: var(--homepage-text-success);
+                        fill: var(--homepage-text-success);
+                    }
                 }
             }
         }
+    }
+    & > div.settings-footer {
+        margin-top: 1rem;
+
+        & > button {
+            margin: 0 0.25rem;
+            padding-left: 0.75rem;
+
+            & > img, & > svg {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+footer.fullscreen > #settings {
+    width: -moz-available;
+    height: inherit;
+    max-width: -moz-available;
+    max-height: -moz-available;
+    border-radius: 0;
+
+    & #settings-bookmarks-edit {
+        resize: vertical;
     }
 }

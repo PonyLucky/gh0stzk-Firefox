@@ -1,12 +1,12 @@
 // On window load
 window.onload = function() {
+    // Initialize
+    init();
+    // Run other functions
     main();
     nav();
     bookmarks();
     handlers();
-    // DEBUG
-    personalize();
-    displayBookmarksEditor();
 }
 
 // Main function
@@ -33,9 +33,32 @@ function main() {
 
 function handlers() {
     document.getElementById("personalize").addEventListener("click", personalize);
-    document.getElementById("settings-close").addEventListener("click", personalize);
     document.getElementById("settings-theme-switch").addEventListener("click", changeTheme);
     document.getElementById("settings-search").addEventListener("click", changeSearchEngine);
     document.getElementById("settings-bookmarks").addEventListener("click", displayBookmarksEditor);
     document.getElementById("settings-bookmarks-save").addEventListener("click", saveBookmarksEditor);
+    document.getElementById("settings-fullscreen").addEventListener("click", settingsFS);
+    document.getElementById("settings-close").addEventListener("click", personalize);
+}
+
+function init() {
+    // Get current theme
+    const theme = localStorage.getItem("theme");
+    // Get current search engine
+    const searchEngine = localStorage.getItem("searchEngine");
+    // Get current bookmarks
+    const bookmarks = localStorage.getItem("bookmarks");
+    // Set theme
+    if (theme) {
+        document.documentElement.setAttribute("data-theme", theme);
+        applyTheme();
+    }
+    // Set search engine
+    if (searchEngine) {
+        document.getElementById("search-form").action = searchEngine;
+    }
+    // Set bookmarks
+    if (bookmarks) {
+        BOOKMARKS = JSON.parse(bookmarks);
+    }
 }

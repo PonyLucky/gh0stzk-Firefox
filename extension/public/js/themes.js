@@ -7,10 +7,13 @@ function changeTheme() {
     if (index >= Object.keys(THEMES).length) {
         index = 0;
     }
+    const newTheme = Object.keys(THEMES)[index];
     // Set the new theme
-    document.documentElement.setAttribute('data-theme', Object.keys(THEMES)[index]);
+    document.documentElement.setAttribute('data-theme', newTheme);
     // Apply the new theme
     applyTheme();
+    // Save the new theme
+    localStorage.setItem('theme', newTheme);
 }
 
 function applyTheme() {
