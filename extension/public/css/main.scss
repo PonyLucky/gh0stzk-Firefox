@@ -39,6 +39,9 @@ main {
         margin: 2rem 0;
     }
 }
+.hide {
+    display: none !important;
+}
 
 // Media - on tablet and PC
 @media (min-width: 768px) {
@@ -55,3 +58,5 @@ main {
 @import 'bookmarks';
 // footer
 @import 'footer';
+// settings
+@import 'settings';

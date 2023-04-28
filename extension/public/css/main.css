@@ -44,6 +44,10 @@ main > hr {
   margin: 2rem 0;
 }
 
+.hide {
+  display: none !important;
+}
+
 @media (min-width: 768px) {
   body > * {
     width: 60%;
@@ -67,7 +71,6 @@ nav > form {
 }
 nav > form > * {
   border: none;
-  fill: var(--homepage-text-active);
   padding: 0.5rem;
 }
 nav > form > input {
@@ -90,7 +93,7 @@ nav > form > button {
   align-items: center;
   transition: background-color 0.2s ease-in-out;
 }
-nav > form > button > svg {
+nav > form > button > img {
   height: 1.5rem;
   width: 1.5rem;
 }
@@ -211,13 +214,101 @@ footer {
   bottom: 0.5rem;
   left: 0.5rem;
   z-index: 1;
+  background-color: var(--homepage-bg-primary) !important;
+  border-radius: 1rem;
+  width: calc(100% - 0.5rem);
+  max-width: 450px;
+  max-height: calc(100vh - 0.5rem);
 }
-footer > button#theme {
+footer > button#personalize {
   outline: none;
   border: none;
   cursor: pointer;
 }
-footer > button#theme > img {
+footer > button#personalize > img {
   height: 1.5rem;
   width: 1.5rem;
+}
+
+#settings {
+  background-color: var(--homepage-bg-secondary) !important;
+  padding: 1.5rem 2rem;
+  border-radius: 1rem;
+  text-align: center;
+}
+#settings img, #settings svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+#settings button, #settings select {
+  background-color: var(--homepage-bg-secondary) !important;
+  color: var(--homepage-text-active);
+  fill: var(--homepage-text-active);
+  border: 0;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+#settings button:hover, #settings select:hover {
+  background-color: var(--homepage-bg-secondary);
+  color: var(--homepage-text-secondary);
+  fill: var(--homepage-text-secondary);
+}
+#settings button > svg, #settings select > svg {
+  margin-right: 0.5rem;
+}
+#settings button > svg + span, #settings select > svg + span {
+  position: relative;
+  top: -0.4rem;
+}
+#settings select > option {
+  color: black;
+  border: none;
+}
+#settings select > option:hover, #settings select > option:focus, #settings select > option:active {
+  color: black;
+}
+#settings > ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+#settings > ul > li {
+  margin: 0.5rem 0;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(var(--homepage-text-primary-rgb), 0.5);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#settings > ul > li > h2 {
+  display: block;
+  color: var(--homepage-text-secondary);
+}
+#settings > ul > li > h2 > img {
+  margin-right: 0.5rem;
+  position: relative;
+  bottom: -0.275rem;
+}
+#settings > ul > li.settings-content {
+  border-bottom: none;
+  padding: 0.5rem 1rem;
+  display: block;
+  text-align: right;
+}
+#settings > ul > li.settings-content > textarea {
+  display: block;
+  background-color: var(--homepage-bg-secondary) !important;
+  color: var(--homepage-text-active);
+  border: 0;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  width: -moz-available;
+  height: 10rem;
+  resize: none;
+  transition: all 0.2s ease-in-out;
+}
+#settings > ul > li.settings-content > button {
+  margin-top: 0.5rem;
 }

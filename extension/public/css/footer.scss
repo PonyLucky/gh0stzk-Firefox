@@ -3,8 +3,13 @@ footer {
     bottom: 0.5rem;
     left: 0.5rem;
     z-index: 1;
+    background-color: var(--homepage-bg-primary) !important;
+    border-radius: 1rem;
+    width: calc(100% - 0.5rem);
+    max-width: 450px;
+    max-height: calc(100vh - 0.5rem);
 
-    & > button#theme {
+    & > button#personalize {
         outline: none;
         border: none;
         cursor: pointer;

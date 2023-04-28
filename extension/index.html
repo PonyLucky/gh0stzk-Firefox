@@ -16,9 +16,10 @@
         <p id="time"></p>
         <!-- Search bar -->
         <form
-            action="https://duckduckgo.com/"
+            action="https://www.google.com/search"
             method="get"
             target="_self"
+            id="search-form"
         >
             <input
                 id="search"
@@ -31,7 +32,7 @@
                 spellcheck="false"
             >
             <button type="submit">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960"><path d="M796 935 533 672q-30 26-69.959 40.5T378 727q-108.162 0-183.081-75Q120 577 120 471t75-181q75-75 181.5-75t181 75Q632 365 632 471.15 632 514 618 554q-14 40-42 75l264 262-44 44ZM377 667q81.25 0 138.125-57.5T572 471q0-81-56.875-138.5T377 275q-82.083 0-139.542 57.5Q180 390 180 471t57.458 138.5Q294.917 667 377 667Z"/></svg>
+                <img src="public/img/icons/search.svg">
             </button>
         </form>
     </nav>
@@ -41,9 +42,52 @@
         </section>
     </main>
     <footer>
-        <button id="theme">
+        <button id="personalize">
             <img src="public/img/palette.svg">
         </button>
+        <div id="settings" class="hide">
+            <ul>
+                <li>
+                    <h2>
+                        <img src="public/img/icons/theme.svg">
+                        <span>Theme</span>
+                    </h2>
+                    <button id="settings-theme-switch">Switch</button>
+                </li>
+                <li>
+                    <h2>
+                        <img src="public/img/icons/search-purple.svg">
+                        <span>Search</span>
+                    </h2>
+                    <select id="settings-search">
+                        <option value="https://www.google.com/search">Google</option>
+                        <option value="https://duckduckgo.com/">DuckDuckGo</option>
+                        <option value="https://www.bing.com/search">Bing</option>
+                        <option value="https://www.ecosia.org/search">Ecosia</option>
+                        <option value="https://www.qwant.com/">Qwant</option>
+                        <option value="https://www.startpage.com/do/search">Startpage</option>
+                    </select>
+                </li>
+                <li>
+                    <h2>
+                        <img src="public/img/icons/book.svg">
+                        <span>Bookmarks</span>
+                    </h2>
+                    <button id="settings-bookmarks">Edit</button>
+                </li>
+                <li class="settings-content hide">
+                    <textarea id="settings-bookmarks-edit" rows="20"></textarea>
+                    <button id="settings-bookmarks-save">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="48"><path d="M840 373v503q0 24-18 42t-42 18H180q-24 0-42-18t-18-42V276q0-24 18-42t42-18h503l157 157ZM479.765 811Q523 811 553.5 780.735q30.5-30.264 30.5-73.5Q584 664 553.735 633.5q-30.264-30.5-73.5-30.5Q437 603 406.5 633.265q-30.5 30.264-30.5 73.5Q376 750 406.265 780.5q30.264 30.5 73.5 30.5ZM233 472h358V329H233v143Z"/></svg>
+                        <span>Save</span>
+                    </button>
+                </li>
+            </ul>
+            <button id="settings-close">
+                <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="48"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg>
+                <span>Close</span>
+            </button>
+        </div>
     </footer>
     <!-- JS -->
     <script src="shared/bookmarks.js"></script>
@@ -51,6 +95,8 @@
     <script src="public/js/nav.js"></script>
     <script src="public/js/bookmarks.js"></script>
     <script src="public/js/themes.js"></script>
+    <script src="public/js/personalize.js"></script>
+    <script src="public/js/settings.js"></script>
     <script src="public/js/main.js"></script>
 </body>
 </html>

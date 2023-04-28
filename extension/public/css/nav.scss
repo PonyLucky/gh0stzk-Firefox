@@ -16,7 +16,6 @@ nav {
 
         & > * {
             border: none;
-            fill: var(--homepage-text-active);
             padding: 0.5rem;
         }
         & > input {
@@ -36,7 +35,7 @@ nav {
             align-items: center;
             transition: background-color 0.2s ease-in-out;
 
-            & > svg {
+            & > img {
                 height: 1.5rem;
                 width: 1.5rem;
             }

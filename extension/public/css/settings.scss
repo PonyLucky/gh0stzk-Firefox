@@ -1,0 +1,90 @@
+#settings {
+    background-color: var(--homepage-bg-secondary) !important;
+    padding: 1.5rem 2rem;
+    border-radius: 1rem;
+    text-align: center;
+
+    & img, & svg {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    & button, & select {
+        background-color: var(--homepage-bg-secondary) !important;
+        color: var(--homepage-text-active);
+        fill: var(--homepage-text-active);
+        border: 0;
+        border-radius: 0.5rem;
+        padding: 0.5rem 1rem;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+            background-color: var(--homepage-bg-secondary);
+            color: var(--homepage-text-secondary);
+            fill: var(--homepage-text-secondary);
+        }
+        & > svg {
+            margin-right: 0.5rem;
+
+            & + span {
+                position: relative;
+                top: -0.40rem;
+            }
+        }
+    }
+    & select > option {
+        color: black;
+        border: none;
+
+        &:hover, &:focus, &:active {
+            color: black;
+        }
+    }
+    & > ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        & > li {
+            margin: 0.5rem 0;
+            padding: 0.5rem 0;
+            border-bottom: 1px solid rgba(var(--homepage-text-primary-rgb), 0.5);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            & > h2 {
+                display: block;
+                color: var(--homepage-text-secondary);
+
+                & > img {
+                    margin-right: 0.5rem;
+                    position: relative;
+                    bottom: -0.275rem;
+                }
+            }
+            &.settings-content {
+                border-bottom: none;
+                padding: 0.5rem 1rem;
+                display: block;
+                text-align: right;
+
+                & > textarea {
+                    display: block;
+                    background-color: var(--homepage-bg-secondary) !important;
+                    color: var(--homepage-text-active);
+                    border: 0;
+                    border-radius: 0.5rem;
+                    padding: 0.5rem 1rem;
+                    width: -moz-available;
+                    height: 10rem;
+                    resize: none;
+                    transition: all 0.2s ease-in-out;
+                }
+                & > button {
+                    margin-top: 0.5rem;
+                }
+            }
+        }
+    }
+}
