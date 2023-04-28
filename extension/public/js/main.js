@@ -14,4 +14,15 @@ function main() {
     const searchInput = document.getElementById("search");
     // Set focus
     searchInput.focus();
+
+    // List of alphanumeric keys
+    const keys = "abcdefghijklmnopqrstuvwxyz0123456789";
+    // Add event listener to body, when key is pressed
+    document.body.addEventListener("keydown", function(e) {
+        // If key is alphanumeric
+        if (keys.includes(e.key.toLowerCase())) {
+            // Focus on input
+            searchInput.focus();
+        }
+    });
 }
