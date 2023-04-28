@@ -16,14 +16,13 @@
         border-radius: 0.5rem;
         padding: 0.5rem 1rem;
         cursor: pointer;
-        transition: all 0.2s ease-in-out;
 
         &:hover {
             background-color: var(--homepage-bg-secondary);
             color: var(--homepage-text-secondary);
             fill: var(--homepage-text-secondary);
         }
-        & > svg {
+        & > img, & > svg {
             margin-right: 0.5rem;
 
             & + span {
@@ -57,7 +56,8 @@
                 display: block;
                 color: var(--homepage-text-secondary);
 
-                & > img {
+                & > img, & > svg {
+                    fill: var(--homepage-text-secondary);
                     margin-right: 0.5rem;
                     position: relative;
                     bottom: -0.275rem;
@@ -79,7 +79,6 @@
                     width: -moz-available;
                     height: 10rem;
                     resize: none;
-                    transition: all 0.2s ease-in-out;
                 }
                 & > button {
                     margin-top: 0.5rem;

@@ -11,6 +11,8 @@
     scroll-behavior: smooth;
     // Text decoration
     text-decoration: none;
+    // Animation
+    transition: all 0.2s ease-in-out;
 }
 body {
     background-color: var(--homepage-bg-primary) !important;

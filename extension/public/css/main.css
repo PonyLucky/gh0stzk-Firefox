@@ -17,6 +17,7 @@
   scrollbar-color: var(--homepage-scrollbar);
   scroll-behavior: smooth;
   text-decoration: none;
+  transition: all 0.2s ease-in-out;
 }
 
 body {
@@ -91,9 +92,9 @@ nav > form > input:focus {
 nav > form > button {
   display: flex;
   align-items: center;
-  transition: background-color 0.2s ease-in-out;
+  fill: var(--homepage-text-active);
 }
-nav > form > button > img {
+nav > form > button > img, nav > form > button > svg {
   height: 1.5rem;
   width: 1.5rem;
 }
@@ -225,7 +226,8 @@ footer > button#personalize {
   border: none;
   cursor: pointer;
 }
-footer > button#personalize > img {
+footer > button#personalize > img, footer > button#personalize > svg {
+  fill: var(--homepage-text-secondary);
   height: 1.5rem;
   width: 1.5rem;
 }
@@ -248,17 +250,16 @@ footer > button#personalize > img {
   border-radius: 0.5rem;
   padding: 0.5rem 1rem;
   cursor: pointer;
-  transition: all 0.2s ease-in-out;
 }
 #settings button:hover, #settings select:hover {
   background-color: var(--homepage-bg-secondary);
   color: var(--homepage-text-secondary);
   fill: var(--homepage-text-secondary);
 }
-#settings button > svg, #settings select > svg {
+#settings button > img, #settings button > svg, #settings select > img, #settings select > svg {
   margin-right: 0.5rem;
 }
-#settings button > svg + span, #settings select > svg + span {
+#settings button > img + span, #settings button > svg + span, #settings select > img + span, #settings select > svg + span {
   position: relative;
   top: -0.4rem;
 }
@@ -286,7 +287,8 @@ footer > button#personalize > img {
   display: block;
   color: var(--homepage-text-secondary);
 }
-#settings > ul > li > h2 > img {
+#settings > ul > li > h2 > img, #settings > ul > li > h2 > svg {
+  fill: var(--homepage-text-secondary);
   margin-right: 0.5rem;
   position: relative;
   bottom: -0.275rem;
@@ -307,7 +309,6 @@ footer > button#personalize > img {
   width: -moz-available;
   height: 10rem;
   resize: none;
-  transition: all 0.2s ease-in-out;
 }
 #settings > ul > li.settings-content > button {
   margin-top: 0.5rem;

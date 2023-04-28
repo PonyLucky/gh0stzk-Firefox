@@ -8,10 +8,10 @@
     "homepage_url": "https://github.com/PonyLucky",
 
     "icons": {
-        "48": "public/img/icons/icon-48.png",
-        "128": "public/img/icons/icon-128.png",
-        "256": "public/img/icons/icon-256.png",
-        "512": "public/img/icons/icon-512.png"
+        "48": "public/img/favicon/favicon-48.png",
+        "128": "public/img/favicon/favicon-128.png",
+        "256": "public/img/favicon/favicon-256.png",
+        "512": "public/img/favicon/favicon-512.png"
     },
 
     "chrome_url_overrides": {
@@ -25,10 +25,10 @@
     "browser_action": {
 		"default_title": "gh0stzk's Firefox",
 		"default_icon": {
-            "48": "public/img/icons/icon-48.png",
-            "128": "public/img/icons/icon-128.png",
-            "256": "public/img/icons/icon-256.png",
-            "512": "public/img/icons/icon-512.png"
+            "48": "public/img/favicon/favicon-48.png",
+            "128": "public/img/favicon/favicon-128.png",
+            "256": "public/img/favicon/favicon-256.png",
+            "512": "public/img/favicon/favicon-512.png"
 		},
 		"browser_style": true
 	},

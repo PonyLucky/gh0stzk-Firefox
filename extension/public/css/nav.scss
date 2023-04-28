@@ -33,9 +33,9 @@ nav {
         & > button {
             display: flex;
             align-items: center;
-            transition: background-color 0.2s ease-in-out;
+            fill: var(--homepage-text-active);
 
-            & > img {
+            & > img, & > svg {
                 height: 1.5rem;
                 width: 1.5rem;
             }

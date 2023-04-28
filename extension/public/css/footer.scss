@@ -14,7 +14,8 @@ footer {
         border: none;
         cursor: pointer;
 
-        & > img {
+        & > img, & > svg {
+            fill: var(--homepage-text-secondary);
             height: 1.5rem;
             width: 1.5rem;
         }

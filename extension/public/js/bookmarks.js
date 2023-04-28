@@ -1,6 +1,8 @@
 function bookmarks() {
     // Get bookmarks
     const bookmarks = document.getElementById("bookmarks");
+    // Set base img dir
+    const imgDir = "./public/img/website/";
     // Loop through BOOKMARKS
     for (let i = 0; i < BOOKMARKS.length; i++) {
         let category = BOOKMARKS[i].category;
@@ -44,7 +46,7 @@ function bookmarks() {
 
             // Set link attributes
             a.href = url;
-            img.src = icon;
+            img.src = imgDir + icon;
             img.alt = name.split(" ").map((word) => word[0]).join("");
             title.textContent = name;
             description.textContent = desc;
