@@ -63,7 +63,6 @@ nav > form {
   display: flex;
   justify-content: space-around;
   background-color: var(--homepage-bg-active) !important;
-  color: var(--homepage-text-active);
   flex: 1;
 }
 nav > form > * {
@@ -72,6 +71,7 @@ nav > form > * {
   padding: 0.5rem;
 }
 nav > form > input {
+  color: var(--homepage-text-active);
   flex: 1;
 }
 nav > form > input::-moz-placeholder {

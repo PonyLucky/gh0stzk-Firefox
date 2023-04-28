@@ -12,7 +12,6 @@ nav {
         display: flex;
         justify-content: space-around;
         background-color: var(--homepage-bg-active) !important;
-        color: var(--homepage-text-active);
         flex: 1;
 
         & > * {
@@ -21,6 +20,7 @@ nav {
             padding: 0.5rem;
         }
         & > input {
+            color: var(--homepage-text-active);
             flex: 1;
 
             &::placeholder {
