@@ -1,7 +1,7 @@
 var BOOKMARKS = [
     {
         "category": "Fun",
-        "fullWidth": true,
+        "fullWidth": false,
         "links": [
             {
                 "name": "Youtube",
@@ -19,6 +19,7 @@ var BOOKMARKS = [
     },
     {
         "category": "Learn",
+        "fullWidth": false,
         "links": [
             {
                 "name": "MDN Web Docs",
@@ -36,6 +37,7 @@ var BOOKMARKS = [
     },
     {
         "category": "Code",
+        "fullWidth": false,
         "links": [
             {
                 "name": "GitHub",
