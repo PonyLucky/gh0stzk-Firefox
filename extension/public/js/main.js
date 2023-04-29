@@ -7,8 +7,6 @@ window.onload = function() {
     nav();
     bookmarks();
     handlers();
-    // DEBUG
-    personalize();
 }
 
 // Main function
