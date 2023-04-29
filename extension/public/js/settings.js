@@ -82,3 +82,53 @@ function settingsFS() {
     // Toggle fullscreen class
     document.getElementById("settings").parentElement.classList.toggle("fullscreen");
 }
+
+function exportSettings() {
+    // Get settings
+    const settings = {
+        theme: localStorage.getItem("theme"),
+        searchEngine: localStorage.getItem("searchEngine"),
+        bookmarks: JSON.parse(localStorage.getItem("bookmarks"))
+    };
+    // Get settings string
+    const settingsStr = JSON.stringify(settings, null, 2);
+    // Create element
+    const element = document.createElement("a");
+    // Set href
+    element.href = "data:application/json;charset=utf-8," + encodeURIComponent(settingsStr);
+    // Set download
+    element.download = "Homepage-Settings.json";
+    // Click element
+    element.click();
+}
+
+function importSettings() {
+    // Create element
+    const element = document.createElement("input");
+    // Set type
+    element.type = "file";
+    // Set onchange
+    element.onchange = function () {
+        // Get file
+        const file = this.files[0];
+        // Create file reader
+        const reader = new FileReader();
+        // Set onload
+        reader.onload = function () {
+            // Get settings
+            const settings = JSON.parse(this.result);
+            // Set theme
+            localStorage.setItem("theme", settings.theme);
+            // Set search engine
+            localStorage.setItem("searchEngine", settings.searchEngine);
+            // Set bookmarks
+            localStorage.setItem("bookmarks", JSON.stringify(settings.bookmarks));
+            // Reload
+            location.reload();
+        };
+        // Read file
+        reader.readAsText(file);
+    };
+    // Click element
+    element.click();
+}

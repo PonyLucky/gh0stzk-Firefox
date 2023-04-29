@@ -221,7 +221,6 @@ footer {
   background-color: var(--homepage-bg-primary) !important;
   border-radius: 1rem;
   width: auto;
-  min-width: 400px;
   max-height: calc(100vh - 0.5rem);
 }
 footer > button#personalize {
@@ -282,6 +281,12 @@ footer.fullscreen {
   color: var(--homepage-text-active);
   fill: var(--homepage-text-active);
 }
+#settings button.btn-icon, #settings select.btn-icon {
+  padding: 0.5rem;
+}
+#settings button.btn-icon > img, #settings button.btn-icon > svg, #settings select.btn-icon > img, #settings select.btn-icon > svg {
+  margin: 0;
+}
 #settings select > option {
   color: black;
   border: none;
@@ -301,6 +306,7 @@ footer.fullscreen {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 0 1rem;
 }
 #settings > ul > li > h2 {
   display: block;

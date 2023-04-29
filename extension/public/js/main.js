@@ -32,13 +32,18 @@ function main() {
 }
 
 function handlers() {
-    document.getElementById("personalize").addEventListener("click", personalize);
-    document.getElementById("settings-theme-switch").addEventListener("click", changeTheme);
-    document.getElementById("settings-search").addEventListener("click", changeSearchEngine);
-    document.getElementById("settings-bookmarks").addEventListener("click", displayBookmarksEditor);
-    document.getElementById("settings-bookmarks-save").addEventListener("click", saveBookmarksEditor);
-    document.getElementById("settings-fullscreen").addEventListener("click", settingsFS);
-    document.getElementById("settings-close").addEventListener("click", personalize);
+    function attach(id, handler, event = "click") {
+        document.getElementById(id).addEventListener(event, handler);
+    }
+    attach("personalize", personalize);
+    attach("settings-theme-switch", changeTheme);
+    attach("settings-search", changeSearchEngine);
+    attach("settings-bookmarks", displayBookmarksEditor);
+    attach("settings-bookmarks-save", saveBookmarksEditor);
+    attach("settings-import", importSettings);
+    attach("settings-export", exportSettings);
+    attach("settings-fullscreen", settingsFS);
+    attach("settings-close", personalize);
 }
 
 function init() {
@@ -59,6 +64,13 @@ function init() {
     }
     // Set bookmarks
     if (bookmarks) {
-        BOOKMARKS = JSON.parse(bookmarks);
+        try {
+            BOOKMARKS = JSON.parse(bookmarks);
+        }
+        catch (e) {
+            console.error(e);
+            // Reset bookmarks in local storage
+            localStorage.setItem("bookmarks", JSON.stringify(BOOKMARKS));
+        }
     }
 }

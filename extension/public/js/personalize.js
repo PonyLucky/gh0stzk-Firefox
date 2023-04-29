@@ -12,4 +12,11 @@ function personalize() {
             settingsFS();
         }
     }
+    else {
+        // If document width is less than 769px
+        if (document.documentElement.clientWidth < 769) {
+            // Toggle fullscreen
+            settingsFS();
+        }
+    }
 }
