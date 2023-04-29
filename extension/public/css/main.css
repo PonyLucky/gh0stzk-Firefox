@@ -242,6 +242,9 @@ footer.fullscreen {
   z-index: 2;
   background-color: var(--homepage-bg-tertiary) !important;
 }
+footer:not(.fullscreen) > #settings {
+  box-shadow: 0.1rem 0.1rem 0.5rem rgba(var(--homepage-text-primary-rgb), 0.1);
+}
 
 #settings {
   background-color: var(--homepage-bg-secondary) !important;
