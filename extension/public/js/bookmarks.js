@@ -46,9 +46,18 @@ function bookmarks() {
             title.className = "title";
             description.className = "desc";
 
+            // Detect if icon is an url or a file or datauri
+            if (
+                !icon.includes("http")
+                && !icon.includes("data:image")
+                && !icon.includes("data:application")
+            ) {
+                icon = imgDir + icon;
+            }
+
             // Set link attributes
             a.href = url;
-            img.src = imgDir + icon;
+            img.src = icon;
             img.alt = name.split(" ").map((word) => word[0]).join("");
             title.textContent = name;
             description.textContent = desc;
