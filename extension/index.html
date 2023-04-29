@@ -13,7 +13,7 @@
 <body>
     <nav>
         <!-- Time -->
-        <p id="time"></p>
+        <p id="time" data-mode="pulse" data-format="24h"></p>
         <!-- Search bar -->
         <form
             action="https://www.google.com/search"
@@ -67,6 +67,20 @@
                         <option value="https://www.qwant.com/">Qwant</option>
                         <option value="https://www.startpage.com/do/search">Startpage</option>
                     </select>
+                </li>
+                <li>
+                    <h2>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="48"><path d="m627 769 45-45-159-160V363h-60v225l174 181ZM480 976q-82 0-155-31.5t-127.5-86Q143 804 111.5 731T80 576q0-82 31.5-155t86-127.5Q252 239 325 207.5T480 176q82 0 155 31.5t127.5 86Q817 348 848.5 421T880 576q0 82-31.5 155t-86 127.5Q708 913 635 944.5T480 976Z"/></svg>
+                        <span>Time</span>
+                    </h2>
+                    <div>
+                        <select id="settings-time-mode">
+                            <option value="pulse">Pulse</option>
+                            <option value="static">Static</option>
+                            <option value="no">Hide</option>
+                        </select>
+                        <button id="settings-time-format">24h</button>
+                    </div>
                 </li>
                 <li>
                     <h2>

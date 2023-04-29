@@ -9,6 +9,26 @@ function changeSearchEngine() {
     localStorage.setItem("searchEngine", searchSetting);
 }
 
+function changeTimeMode() {
+    // Get time mode
+    const timeMode = document.getElementById("settings-time-mode").value;
+    // Set time mode
+    document.getElementById("time").setAttribute("data-mode", timeMode);
+    // Save time mode
+    localStorage.setItem("timeMode", timeMode);
+}
+
+function changeTimeFormat() {
+    // Get time format
+    const timeFormat = document.getElementById("settings-time-format");
+    // Change time format
+    timeFormat.textContent = timeFormat.textContent === "12h" ? "24h" : "12h";
+    // Set time format
+    document.getElementById("time").setAttribute("data-format", timeFormat.textContent);
+    // Save time format
+    localStorage.setItem("timeFormat", timeFormat.textContent);
+}
+
 function displayBookmarksEditor() {
     // Get bookmarks editor
     const bookmarksEditor = document.getElementsByClassName("settings-content")[0];
@@ -87,6 +107,8 @@ function exportSettings() {
     // Get settings
     const settings = {
         theme: localStorage.getItem("theme"),
+        timeMode: localStorage.getItem("timeMode"),
+        timeFormat: localStorage.getItem("timeFormat"),
         searchEngine: localStorage.getItem("searchEngine"),
         bookmarks: JSON.parse(localStorage.getItem("bookmarks"))
     };
@@ -119,6 +141,10 @@ function importSettings() {
             const settings = JSON.parse(this.result);
             // Set theme
             localStorage.setItem("theme", settings.theme);
+            // Set time mode
+            localStorage.setItem("timeMode", settings.timeMode);
+            // Set time format
+            localStorage.setItem("timeFormat", settings.timeFormat);
             // Set search engine
             localStorage.setItem("searchEngine", settings.searchEngine);
             // Set bookmarks

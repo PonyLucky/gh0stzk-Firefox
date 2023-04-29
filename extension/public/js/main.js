@@ -7,6 +7,8 @@ window.onload = function() {
     nav();
     bookmarks();
     handlers();
+    // DEBUG
+    personalize();
 }
 
 // Main function
@@ -38,6 +40,8 @@ function handlers() {
     attach("personalize", personalize);
     attach("settings-theme-switch", changeTheme);
     attach("settings-search", changeSearchEngine);
+    attach("settings-time-mode", changeTimeMode);
+    attach("settings-time-format", changeTimeFormat);
     attach("settings-bookmarks", displayBookmarksEditor);
     attach("settings-bookmarks-save", saveBookmarksEditor);
     attach("settings-import", importSettings);
@@ -51,6 +55,10 @@ function init() {
     const theme = localStorage.getItem("theme");
     // Get current search engine
     const searchEngine = localStorage.getItem("searchEngine");
+    // Get current time mode
+    const timeMode = localStorage.getItem("timeMode");
+    // Get current time format
+    const timeFormat = localStorage.getItem("timeFormat");
     // Get current bookmarks
     const bookmarks = localStorage.getItem("bookmarks");
     // Set theme
@@ -61,6 +69,17 @@ function init() {
     // Set search engine
     if (searchEngine) {
         document.getElementById("search-form").action = searchEngine;
+        document.getElementById("settings-search").value = searchEngine;
+    }
+    // Set time mode
+    if (timeMode) {
+        document.getElementById("time").setAttribute("data-mode", timeMode);
+        document.getElementById("settings-time-mode").value = timeMode;
+    }
+    // Set time format
+    if (timeFormat) {
+        document.getElementById("time").setAttribute("data-format", timeFormat);
+        document.getElementById("settings-time-format").textContent = timeFormat;
     }
     // Set bookmarks
     if (bookmarks) {
