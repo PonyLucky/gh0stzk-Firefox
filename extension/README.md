@@ -5,7 +5,7 @@ Thanks to [benphelps](https://github.com/benphelps) for the original idea, thank
 This is a static homepage to start the browser with. It is a simple HTML page with:
 
 * a search bar,
-* a clock / date,
+* a clock,
 * a list of bookmarks.
 
 ## Why?
@@ -14,15 +14,18 @@ I use Firefox as my main browser. I like to have a clean start page, but I also 
 
 I have a server running at home so I first used the work of [benphelps](https://github.com/benphelps/homepage) to get it. Though when you have a laptop you ought to move it around and then the page crashes because it can't reach the server.
 
-So I decided to make a static version of the homepage. I heavily modified the original look and feel to my liking so the homepage merges perfectly with my [theme](https://github.com/gh0stzk/dotfiles/tree/master/misc/firefox).
+So I decided to make a static version of the homepage. I heavily modified the original look and feel to my liking so the homepage merges perfectly with my [config](https://github.com/gh0stzk/dotfiles/tree/master/misc/firefox).
 
 ## Installation
+
+Install the Firefox extension from [addons.mozilla.org](https://addons.mozilla.org/fr/firefox/addon/gh0stzk-s-homepage/). The extension is prefered because it allows to use the `newtab` page as the homepage and will be updated automatically.
+
+### OR
 
 1. Clone this repository (somewhere it won't bother you. I use `~/mozilla/homepage/`)
 2. Open `index.html` in your browser
 3. Copy the URL of the page
 4. Set the URL as your homepage in your browser.
-5. (Optional) Set the URL as your new tab page in your browser.
 
 ## Bookmarks
 
@@ -32,6 +35,7 @@ Here is the format:
 {
   {
     "category": "The category name - e.g. 'Development'",
+    "fullWidth": true, // Optional, default: false
     "links": [
       {
         "name": "The name of the link",
@@ -76,7 +80,3 @@ If you want to keep the color sheme over other pages, you can find the settings 
 * Click on the **Manage settings** button.
 * Click on the **Import** button.
 * Select the `Dark-Reader-Settings.json` file.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

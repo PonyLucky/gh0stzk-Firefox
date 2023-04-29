@@ -8,11 +8,15 @@ function bookmarks() {
     // Loop through BOOKMARKS
     for (let i = 0; i < BOOKMARKS.length; i++) {
         let category = BOOKMARKS[i].category;
+        let isFullWidth = BOOKMARKS[i].hasOwnProperty("fullWidth") ? BOOKMARKS[i].fullWidth : false;
         let links = BOOKMARKS[i].links;
         let cat = document.createElement("div");
         let h2 = document.createElement("h2");
         let ul = document.createElement("ul");
         cat.classList.add("category");
+        if (isFullWidth) {
+            cat.classList.add("full-width");
+        }
         cat.appendChild(h2);
         cat.appendChild(ul);
 

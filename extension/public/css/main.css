@@ -131,8 +131,7 @@ nav > #time {
 }
 section#bookmarks {
   display: flex;
-  flex-flow: column;
-  align-items: center;
+  flex-flow: wrap;
   justify-content: center;
   align-items: baseline;
   gap: 0.5rem 0.25rem;
@@ -140,6 +139,7 @@ section#bookmarks {
 }
 section#bookmarks > div.category {
   width: 100%;
+  flex: 1 0 auto;
 }
 section#bookmarks > div.category > h2 {
   color: var(--homepage-text-secondary);
@@ -163,6 +163,9 @@ section#bookmarks > div.category > ul > li {
   flex-flow: row;
   gap: 1rem;
   align-items: center;
+}
+section#bookmarks > div.category.full-width {
+  flex-basis: auto !important;
 }
 
 section#bookmarks > div.category > ul > li > a {
@@ -205,13 +208,8 @@ section#bookmarks > div.category > ul > li > a > div.content > p.desc {
 }
 
 @media (min-width: 768px) {
-  section#bookmarks {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 0.5rem;
-  }
-  section#bookmarks > div.category:nth-child(2n-1):nth-last-of-type(1) {
-    grid-column: 1/-1;
+  section#bookmarks > div.category {
+    flex: 1 0 33.33%;
   }
 }
 footer {

@@ -1,16 +1,18 @@
 # gh0stzk's Firefox
 
-This is my Firefox configuration. It is based on [gh0stzk](https://github.com/gh0stzk/dotfiles/tree/master/misc/firefox)
+This is my Firefox configuration. It is based on [gh0stzk](https://github.com/gh0stzk/dotfiles/tree/master/misc/firefox).
 
 ## Installation
 
 ### 1) Theme
 
-Install the theme from [addons.mozilla.org](https://addons.mozilla.org/fr/firefox/addon/gh0stzk-s-theme/)
+Install the theme from [addons.mozilla.org](https://addons.mozilla.org/fr/firefox/addon/gh0stzk-s-theme/).
 
 ### 2) Extension
 
-Install the extension from [addons.mozilla.org](https://addons.mozilla.org/fr/firefox/addon/gh0stzk-s-homepage/)
+Install the extension from [addons.mozilla.org](https://addons.mozilla.org/fr/firefox/addon/gh0stzk-s-homepage/).
+
+See [README.md](./extension/README.md) for more information.
 
 ### 3) Dark Reader
 
@@ -28,3 +30,7 @@ Install the extension from [addons.mozilla.org](https://addons.mozilla.org/fr/fi
 * Click on the **Open Folder** button.
 * Copy the **content** of `profile/chrome` folder to the opened folder.
 * Restart Firefox.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

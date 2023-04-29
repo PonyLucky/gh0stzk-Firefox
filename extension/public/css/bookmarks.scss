@@ -1,7 +1,6 @@
 section#bookmarks {
     display: flex;
-    flex-flow: column;
-    align-items: center;
+    flex-flow: wrap;
     justify-content: center;
     align-items: baseline;
     gap: 0.5rem 0.25rem;
@@ -9,6 +8,7 @@ section#bookmarks {
 
     & > div.category {
         width: 100%;
+        flex: 1 0 auto;
 
         & > h2 {
             color: var(--homepage-text-secondary);
@@ -33,6 +33,9 @@ section#bookmarks {
                 gap: 1rem;
                 align-items: center;
             }
+        }
+        &.full-width {
+            flex-basis: auto !important;
         }
     }
 }
@@ -83,15 +86,8 @@ section#bookmarks > div.category > ul > li > a {
 // Media - on tablet and PC
 @media (min-width: 768px) {
     section#bookmarks {
-        display: grid;
-        // 2 columns
-        grid-template-columns: repeat(2, 1fr);
-        // 1rem gap
-        grid-gap: 0.5rem;
-
-        // Last row full width
-        & > div.category:nth-child(2n-1):nth-last-of-type(1) {
-            grid-column: 1 / -1;
+        & > div.category {
+            flex: 1 0 33.33%;
         }
     }
 }

@@ -1,6 +1,7 @@
 var BOOKMARKS = [
     {
         "category": "Fun",
+        "fullWidth": true,
         "links": [
             {
                 "name": "Youtube",
