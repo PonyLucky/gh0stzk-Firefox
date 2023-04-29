@@ -30,23 +30,23 @@ Here is the format:
 
 ```json
 {
-    {
-        "category": "The category name - e.g. 'Development'",
-        "links": [
-            {
-                "name": "The name of the link",
-                "url": "The URL of the link",
-                "description": "A description of the link",
-                "icon": "The URL of the icon (URL or data URI or local path to file)"
-            },
-            {
-                "name": "GitHub",
-                "url": "https://www.github.com/",
-                "description": "Hosting service for version control using Git.",
-                "icon": "https://github.githubassets.com/favicons/favicon.svg"
-            }
-        ]
-    },
+  {
+    "category": "The category name - e.g. 'Development'",
+    "links": [
+      {
+        "name": "The name of the link",
+        "url": "The URL of the link",
+        "description": "A description of the link",
+         "icon": "The URL of the icon (URL or data URI or local path to file)"
+      },
+      {
+        "name": "GitHub",
+        "url": "https://www.github.com/",
+        "description": "Hosting service for version control using Git.",
+        "icon": "https://github.githubassets.com/favicons/favicon.svg"
+      }
+    ]
+  },
 }
 ```
 
