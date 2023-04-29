@@ -24,9 +24,7 @@ So I decided to make a static version of the homepage. I heavily modified the or
 4. Set the URL as your homepage in your browser.
 5. (Optional) Set the URL as your new tab page in your browser.
 
-## Configuration
-
-The bookmarks are defined in `./shared/bookmarks.json`. You can add, remove or edit them.
+## Bookmarks
 
 Here is the format:
 

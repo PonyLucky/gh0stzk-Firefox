@@ -349,6 +349,23 @@ footer.fullscreen {
   color: var(--homepage-text-success);
   fill: var(--homepage-text-success);
 }
+#settings > ul > li > a.info {
+  display: inline-block;
+  background-color: var(--homepage-bg-secondary) !important;
+  color: var(--homepage-text-active);
+  text-decoration: none;
+  padding: 0.5rem;
+  padding-bottom: 0.3rem;
+  margin-bottom: 0.15rem;
+  border-radius: 50%;
+  width: 1.5rem;
+  height: 1.5rem;
+  text-align: center;
+  vertical-align: bottom;
+}
+#settings > ul > li > a.info:hover {
+  color: var(--homepage-text-secondary);
+}
 #settings > div.settings-footer {
   margin-top: 1rem;
 }
