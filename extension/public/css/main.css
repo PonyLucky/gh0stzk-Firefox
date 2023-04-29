@@ -62,7 +62,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   gap: 1rem;
-  padding-top: 3rem;
+  padding-top: 2rem;
 }
 nav > * {
   display: contents;
