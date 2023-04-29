@@ -8,6 +8,24 @@ This is a static homepage to start the browser with. It is a simple HTML page wi
 * a clock,
 * a list of bookmarks.
 
+## Preview
+
+### Dark
+
+[![Dark](../img/dark.png)](../img/dark.png)
+
+### Light
+
+[![Light](../img/light.png)](../img/light.png)
+
+### Responsive
+
+[![Responsive](../img/responsive.png)](../img/responsive.png)
+
+### Responsive settings
+
+[![Responsive-settings](../img/responsive-settings.png)](../img/responsive-settings.png)
+
 ## Why?
 
 I use Firefox as my main browser. I like to have a clean start page, but I also like to have a list of bookmarks that don't change over time.

@@ -2,6 +2,9 @@
 
 This is my Firefox configuration. It is based on [gh0stzk](https://github.com/gh0stzk/dotfiles/tree/master/misc/firefox).
 
+<!-- Image -->
+[![Preview](./img/preview.png)](./img/preview.png)
+
 ## Installation
 
 ### 1) Theme
