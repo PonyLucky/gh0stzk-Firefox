@@ -3,6 +3,9 @@
     padding: 1.5rem 2rem;
     border-radius: 1rem;
     text-align: center;
+    overflow: auto;
+    max-height: calc(100vh - 35px);
+    max-width: calc(100vw - 80px);
 
     & img, & svg {
         width: 1.5rem;
@@ -144,11 +147,11 @@
 }
 
 footer.fullscreen > #settings {
-    width: -moz-available;
-    height: inherit;
-    max-width: -moz-available;
-    max-height: -moz-available;
+    width: auto;
+    height: calc(100vh - 35px);
+    max-width: none;
     border-radius: 0;
+    padding-top: 0.25rem;
 
     & #settings-bookmarks-edit {
         resize: vertical;

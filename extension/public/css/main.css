@@ -237,10 +237,8 @@ footer.fullscreen {
   position: fixed;
   bottom: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  max-width: 100%;
-  max-height: 100%;
+  width: 100vw;
+  height: 100vh;
   border-radius: 0;
   z-index: 2;
   background-color: var(--homepage-bg-tertiary) !important;
@@ -251,6 +249,9 @@ footer.fullscreen {
   padding: 1.5rem 2rem;
   border-radius: 1rem;
   text-align: center;
+  overflow: auto;
+  max-height: calc(100vh - 35px);
+  max-width: calc(100vw - 80px);
 }
 #settings img, #settings svg {
   width: 1.5rem;
@@ -378,11 +379,11 @@ footer.fullscreen {
 }
 
 footer.fullscreen > #settings {
-  width: -moz-available;
-  height: inherit;
-  max-width: -moz-available;
-  max-height: -moz-available;
+  width: auto;
+  height: calc(100vh - 35px);
+  max-width: none;
   border-radius: 0;
+  padding-top: 0.25rem;
 }
 footer.fullscreen > #settings #settings-bookmarks-edit {
   resize: vertical;
