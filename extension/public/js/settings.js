@@ -31,7 +31,7 @@ function changeTimeFormat() {
 
 function displayBookmarksEditor() {
     // Get bookmarks editor
-    const bookmarksEditor = document.getElementsByClassName("settings-content")[0];
+    const bookmarksEditor = document.getElementById("settings-bookmarks-edit").parentElement;
     // Fill bookmarks editor
     fillBookmarksEditor();
     // Toggle open class
@@ -94,6 +94,71 @@ function saveBookmarksEditor() {
     }, 1000);
 }
 
+function displayNewsEditor() {
+    // Get news editor
+    const newsEditor = document.getElementById("settings-news-edit").parentElement;
+    // Fill news editor
+    fillNewsEditor();
+    // Toggle open class
+    document.getElementById("settings-news").classList.toggle("active");
+    // Toggle display
+    newsEditor.classList.toggle("hide");
+}
+
+function fillNewsEditor() {
+    // Get news editor textarea
+    const newsEditor = document.getElementById("settings-news-edit");
+    // Fill textarea
+    newsEditor.value = JSON.stringify(FEEDS, null, 2);
+}
+
+function saveNewsEditor() {
+    // Get news editor textarea
+    const newsEditor = document.getElementById("settings-news-edit");
+    let isValid = true;
+    try {
+        // Save news
+        FEEDS = JSON.parse(newsEditor.value);
+        // Save news to local storage
+        localStorage.setItem("news", JSON.stringify(FEEDS));
+        // Update news
+        feed();
+    }
+    catch (e) {
+        isValid = false;
+        // Get error indexes
+        const errorIndexes = e.message.match(/\d+/g);
+        const errorLine = errorIndexes[0];
+        const errorChar = errorIndexes[1];
+        // Get error line
+        const errorLineText = newsEditor.value.split("\n")[errorLine - 1];
+        // Get error char
+        var errorCharText = errorLineText[errorChar - 1];
+        if (errorCharText === undefined) {
+            errorCharText = "end of line";
+        }
+        console.error(
+            "Error parsing news at line " + errorLine + ", character " + errorChar + ": " + errorCharText
+        );
+        // Get absolute position of error char
+        var errorCharAbs = errorChar - 1;
+        for (var i = 0; i < errorLine - 1; i++) {
+            errorCharAbs += newsEditor.value.split("\n")[i].length + 1;
+        }
+        // Set cursor at error char
+        newsEditor.selectionStart = errorCharAbs;
+        newsEditor.selectionEnd = errorCharAbs;
+        newsEditor.focus();
+    }
+    const classToAdd = isValid ? "success" : "error";
+    // Get save button
+    const saveBtn = document.getElementById("settings-news-save");
+    saveBtn.classList.add(classToAdd);
+    setTimeout(() => {
+        saveBtn.classList.remove(classToAdd);
+    }, 1000);
+}
+
 function settingsFS() {
     // Clear style of editor
     document.getElementById("settings-bookmarks-edit").removeAttribute("style");
@@ -110,7 +175,8 @@ function exportSettings() {
         timeMode: localStorage.getItem("timeMode"),
         timeFormat: localStorage.getItem("timeFormat"),
         searchEngine: localStorage.getItem("searchEngine"),
-        bookmarks: JSON.parse(localStorage.getItem("bookmarks"))
+        bookmarks: JSON.parse(localStorage.getItem("bookmarks")),
+        news: JSON.parse(localStorage.getItem("news"))
     };
     // Get settings string
     const settingsStr = JSON.stringify(settings, null, 2);
@@ -149,6 +215,8 @@ function importSettings() {
             localStorage.setItem("searchEngine", settings.searchEngine);
             // Set bookmarks
             localStorage.setItem("bookmarks", JSON.stringify(settings.bookmarks));
+            // Set news
+            localStorage.setItem("news", JSON.stringify(settings.news));
             // Reload
             location.reload();
         };

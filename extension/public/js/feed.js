@@ -28,6 +28,9 @@ async function feed() {
     // Get feed element
     const feedElement = document.getElementById("feed");
 
+    // Remove all children
+    feedElement.innerHTML = "";
+
     // Create title
     const title = document.createElement("h2");
     title.textContent = "News";

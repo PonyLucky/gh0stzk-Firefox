@@ -44,6 +44,8 @@ function handlers() {
     attach("settings-time-format", changeTimeFormat);
     attach("settings-bookmarks", displayBookmarksEditor);
     attach("settings-bookmarks-save", saveBookmarksEditor);
+    attach("settings-news", displayNewsEditor);
+    attach("settings-news-save", saveNewsEditor);
     attach("settings-import", importSettings);
     attach("settings-export", exportSettings);
     attach("settings-fullscreen", settingsFS);
@@ -61,28 +63,30 @@ function init() {
     const timeFormat = localStorage.getItem("timeFormat");
     // Get current bookmarks
     const bookmarks = localStorage.getItem("bookmarks");
+    // Get current news
+    const news = localStorage.getItem("news");
     // Set theme
     if (theme) {
         document.documentElement.setAttribute("data-theme", theme);
         applyTheme();
     }
     // Set search engine
-    if (searchEngine) {
+    if (searchEngine && searchEngine != "null") {
         document.getElementById("search-form").action = searchEngine;
         document.getElementById("settings-search").value = searchEngine;
     }
     // Set time mode
-    if (timeMode) {
+    if (timeMode && timeMode != "null") {
         document.getElementById("time").setAttribute("data-mode", timeMode);
         document.getElementById("settings-time-mode").value = timeMode;
     }
     // Set time format
-    if (timeFormat) {
+    if (timeFormat && timeFormat != "null") {
         document.getElementById("time").setAttribute("data-format", timeFormat);
         document.getElementById("settings-time-format").textContent = timeFormat;
     }
     // Set bookmarks
-    if (bookmarks) {
+    if (bookmarks && bookmarks != "null") {
         try {
             BOOKMARKS = JSON.parse(bookmarks);
         }
@@ -90,6 +94,17 @@ function init() {
             console.error(e);
             // Reset bookmarks in local storage
             localStorage.setItem("bookmarks", JSON.stringify(BOOKMARKS));
+        }
+    }
+    // Set news
+    if (news && news != "null") {
+        try {
+            FEEDS = JSON.parse(news);
+        }
+        catch (e) {
+            console.error(e);
+            // Reset news in local storage
+            localStorage.setItem("news", JSON.stringify(FEEDS));
         }
     }
     // Init CORS

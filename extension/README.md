@@ -26,6 +26,10 @@ This is a static homepage to start the browser with. It is a simple HTML page wi
 
 [![Responsive-settings](../img/responsive-settings.png)](../img/responsive-settings.png)
 
+### (new) RSS feed
+
+[![RSS](../img/rss.png)](../img/rss.png)
+
 ## Why?
 
 I use Firefox as my main browser. I like to have a clean start page, but I also like to have a list of bookmarks that don't change over time.

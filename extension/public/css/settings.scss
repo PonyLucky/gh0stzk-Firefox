@@ -4,7 +4,7 @@
     border-radius: 1rem;
     text-align: center;
     overflow: auto;
-    max-height: calc(100vh - 35px);
+    max-height: calc(100vh - 25px);
     max-width: calc(100vw - 80px);
 
     & img, & svg {
@@ -148,7 +148,7 @@
 
 footer.fullscreen > #settings {
     width: auto;
-    height: calc(100vh - 35px);
+    height: calc(100vh - 25px);
     max-width: none;
     border-radius: 0;
     padding-top: 0.25rem;

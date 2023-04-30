@@ -212,14 +212,12 @@ section#bookmarks > div.category > ul > li > a > div.content > p.desc {
     flex: 1 0 33.33%;
   }
 }
-#feed {
-  padding: 1rem 0;
-}
 #feed > h2 {
   color: var(--homepage-text-secondary);
   font-size: 1.5rem;
   font-weight: 500;
   padding: 0.75rem;
+  padding-top: 0;
 }
 #feed > #feed-items {
   display: flex;
@@ -298,6 +296,7 @@ footer.fullscreen {
   border-radius: 0;
   z-index: 2;
   background-color: var(--homepage-bg-tertiary) !important;
+  max-height: none;
 }
 footer:not(.fullscreen) > #settings {
   box-shadow: 0.1rem 0.1rem 0.5rem rgba(var(--homepage-text-primary-rgb), 0.1);
@@ -309,7 +308,7 @@ footer:not(.fullscreen) > #settings {
   border-radius: 1rem;
   text-align: center;
   overflow: auto;
-  max-height: calc(100vh - 35px);
+  max-height: calc(100vh - 25px);
   max-width: calc(100vw - 80px);
 }
 #settings img, #settings svg {
@@ -439,7 +438,7 @@ footer:not(.fullscreen) > #settings {
 
 footer.fullscreen > #settings {
   width: auto;
-  height: calc(100vh - 35px);
+  height: calc(100vh - 25px);
   max-width: none;
   border-radius: 0;
   padding-top: 0.25rem;
