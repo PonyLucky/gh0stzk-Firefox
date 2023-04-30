@@ -150,6 +150,6 @@ function searchImage(item) {
         return image.getAttribute("url");
     }
 
-    // No image found, default to wallpaper
+    // No image found, random image
     return "https://picsum.photos/100?random=" + Math.random();
 }
