@@ -9,6 +9,7 @@
     // Scrollbar
     scrollbar-color: var(--homepage-scrollbar);
     scroll-behavior: smooth;
+    scrollbar-width: thin;
     // Text decoration
     text-decoration: none;
     // Animation
@@ -18,8 +19,8 @@ body {
     background-color: var(--homepage-bg-primary) !important;
     color: var(--homepage-text-primary);
     // Full window
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     // Text not selectable
     user-select: none;
 

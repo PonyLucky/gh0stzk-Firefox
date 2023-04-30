@@ -19,6 +19,7 @@
   padding: 0;
   scrollbar-color: var(--homepage-scrollbar);
   scroll-behavior: smooth;
+  scrollbar-width: thin;
   text-decoration: none;
   transition: all 0.2s ease-in-out;
 }
@@ -26,8 +27,8 @@
 body {
   background-color: var(--homepage-bg-primary) !important;
   color: var(--homepage-text-primary);
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
@@ -395,7 +396,6 @@ footer:not(.fullscreen) > #settings {
   max-height: -moz-available;
   transition: none;
   outline: none;
-  scrollbar-width: thin;
 }
 #settings > ul > li.settings-content > button {
   margin-top: 0.5rem;
