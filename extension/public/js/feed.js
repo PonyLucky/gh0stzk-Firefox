@@ -4,7 +4,12 @@ async function feed() {
     // Parse feeds as text
     const parsedFeeds = await Promise.all(feeds.map(feed => feed.text()));
     // Parse feeds as XML
-    const parsedXML = await Promise.all(parsedFeeds.map(feed => parseXML(feed)));
+    let parsedXML = await Promise.all(parsedFeeds.map(feed => parseXML(feed)));
+    // Clear null values
+    parsedXML = parsedXML.filter(xml => {
+        if (xml !== null) return xml;
+        else console.error("Invalid Feed - " + FEEDS[parsedXML.indexOf(xml)]);
+    });
     // Get items from XML
     const items = parsedXML.map(xml => xml.querySelectorAll("item"));
     // Get items array
@@ -55,6 +60,11 @@ async function feed() {
 
 // Parse XML
 function parseXML(xml) {
+    // Prevent unvalid XML
+    if (xml.toLowerCase().startsWith("<!doctype html>")
+        || xml.toLowerCase().startsWith("<html")) {
+        return null;
+    }
     // Create parser
     const parser = new DOMParser();
     // Parse XML
@@ -128,27 +138,19 @@ function searchImage(item) {
     // Try to get image from description
     image = parseHTML(item.querySelector("description").textContent)
         .querySelector("img");
-    if (image) {
-        return image.src;
-    }
+    if (image) return image.src;
 
     // Try to get image from enclosure
     image = item.querySelector("enclosure");
-    if (image) {
-        return image.getAttribute("url");
-    }
+    if (image) return image.getAttribute("url");
 
     // Try to get image from media:content
     image = item.querySelector("media\\:content");
-    if (image) {
-        return image.getAttribute("url");
-    }
+    if (image) return image.getAttribute("url");
 
     // Try to get image from media:thumbnail
     image = item.querySelector("media\\:thumbnail");
-    if (image) {
-        return image.getAttribute("url");
-    }
+    if (image) return image.getAttribute("url");
 
     // No image found, random image
     return "https://picsum.photos/100?random=" + Math.random();
