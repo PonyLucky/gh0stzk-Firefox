@@ -1,5 +1,5 @@
 // On window load
-window.onload = function() {
+window.onload = async function() {
     // Initialize
     init();
     // Run other functions
@@ -7,6 +7,8 @@ window.onload = function() {
     nav();
     bookmarks();
     handlers();
+    // Await feed
+    await feed();
 }
 
 // Main function
@@ -90,4 +92,6 @@ function init() {
             localStorage.setItem("bookmarks", JSON.stringify(BOOKMARKS));
         }
     }
+    // Init CORS
+    CORS.init();
 }
