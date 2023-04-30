@@ -1,13 +1,13 @@
 async function feed() {
     // Fetch feeds
     const feeds = await Promise.all(FEEDS.map(url => fetch(url)));
-    // Parse feeds
+    // Parse feeds as text
     const parsedFeeds = await Promise.all(feeds.map(feed => feed.text()));
-    // Parse feeds
+    // Parse feeds as XML
     const parsedXML = await Promise.all(parsedFeeds.map(feed => parseXML(feed)));
-    // Get items
+    // Get items from XML
     const items = parsedXML.map(xml => xml.querySelectorAll("item"));
-    // Get items
+    // Get items array
     const itemsArray = items.map(item => Array.from(item));
     // Flatten items
     const flattenedItems = itemsArray.reduce((acc, val) => acc.concat(val), []);
@@ -17,14 +17,22 @@ async function feed() {
             b.querySelector("pubDate").textContent
         ) - new Date(a.querySelector("pubDate").textContent)
     );
-    // Get items
+    // Parse items to HTML
     const itemsHTML = sortedItems.map(item => parseRSS(item));
     // Remove duplicate items
     const uniqueItems = checkDuplicates(itemsHTML);
+
     // Get rule feed
     const ruleFeed = document.getElementById("rule-feed");
+    // If no items
+    if (uniqueItems.length === 0) {
+        // Add hide class
+        ruleFeed.classList.add("hide");
+        return;
+    }
     // Remove hide class
     ruleFeed.classList.remove("hide");
+
     // Get feed element
     const feedElement = document.getElementById("feed");
 
@@ -71,15 +79,10 @@ function parseRSS(item) {
     const link = item.querySelector("link").textContent;
     // Get description
     const description = item.querySelector("description").textContent;
-    // Parse description as HTML
-    const parsedDescription = parseHTML(description);
     // Get image
-    let image = parsedDescription.querySelector("img");
-    image = `<div
+    let image = `<div
         class="feed-image"
-        style="background-image: ${
-            image ? `url('${image.src}'),` : ""
-        } url('./public/img/icons/wallpaper.svg')"
+        style="background-image: url('${searchImage(item)}');"
     ></div>`;
     // Get title
     let title = item.querySelector("title").textContent;
@@ -116,4 +119,37 @@ function checkDuplicates(items) {
     });
     // Return items
     return uniqueItems;
+}
+
+// Search image
+function searchImage(item) {
+    let image = null;
+
+    // Try to get image from description
+    image = parseHTML(item.querySelector("description").textContent)
+        .querySelector("img");
+    if (image) {
+        return image.src;
+    }
+
+    // Try to get image from enclosure
+    image = item.querySelector("enclosure");
+    if (image) {
+        return image.getAttribute("url");
+    }
+
+    // Try to get image from media:content
+    image = item.querySelector("media\\:content");
+    if (image) {
+        return image.getAttribute("url");
+    }
+
+    // Try to get image from media:thumbnail
+    image = item.querySelector("media\\:thumbnail");
+    if (image) {
+        return image.getAttribute("url");
+    }
+
+    // No image found, default to wallpaper
+    return "https://picsum.photos/100?random=" + Math.random();
 }
