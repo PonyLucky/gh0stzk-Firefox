@@ -280,4 +280,12 @@ toolbarbutton.bookmark-item:hover,
   background: var(--toolbar-bgcolor) !important;}
 /*stops possible clashes with extension popups*/
 .webextension-popup-browser {
-  background: #fff;}
+  background: #fff;
+}
+
+/************************************/
+
+/*Hide app's close, minimize and maximize buttons*/
+/*.titlebar-buttonbox-container{
+  display: none !important;
+}*/
