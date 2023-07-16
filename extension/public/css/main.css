@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --homepage-bg-primary: #14171c;
   --homepage-bg-secondary: hsla(0, 0%, 100%, .05);
@@ -356,6 +357,39 @@ footer:not(.fullscreen) > #settings {
 }
 #settings select > option:hover, #settings select > option:focus, #settings select > option:active {
   color: black;
+}
+#settings input[type=checkbox] {
+  display: none;
+}
+#settings input[type=checkbox] + label {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0.5rem;
+  padding-bottom: 0.3rem;
+  margin-bottom: 0.075rem;
+  border-radius: 1rem;
+  width: 1.2rem;
+  height: 1rem;
+  text-align: center;
+  vertical-align: bottom;
+  border: 1px solid rgba(var(--homepage-text-primary-rgb), 0.5);
+}
+#settings input[type=checkbox] + label:hover {
+  color: var(--homepage-text-secondary);
+}
+#settings input[type=checkbox] + label:after {
+  content: "✖";
+  position: relative;
+  top: -0.25rem;
+}
+#settings input[type=checkbox]:checked + label {
+  background-color: var(--homepage-bg-focus) !important;
+  color: var(--homepage-text-active);
+  fill: var(--homepage-text-active);
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+#settings input[type=checkbox]:checked + label:after {
+  content: "✔";
 }
 #settings > ul {
   list-style: none;
