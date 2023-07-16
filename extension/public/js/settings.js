@@ -247,8 +247,8 @@ function switchSearch() {
     // If swithTime is also disabled, hide rule
     const switchTime = document.getElementById("settings-time-switch").checked;
     const rule = document.getElementById("rule-main");
-    if (status && switchTime) rule.classList.remove("hide");
-    else rule.classList.add("hide");
+    if (!status && !switchTime) rule.classList.add("hide");
+    else rule.classList.remove("hide");
 
     // Save search status
     localStorage.setItem("searchStatus", status);
@@ -260,8 +260,8 @@ function switchTime() {
     // If swithSearch is also disabled, hide rule
     const switchSearch = document.getElementById("settings-search-switch").checked;
     const rule = document.getElementById("rule-main");
-    if (status && switchSearch) rule.classList.remove("hide");
-    else rule.classList.add("hide");
+    if (!status && !switchSearch) rule.classList.add("hide");
+    else rule.classList.remove("hide");
 
     // Save time status
     localStorage.setItem("timeStatus", status);
