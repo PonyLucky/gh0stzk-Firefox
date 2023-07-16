@@ -1,4 +1,6 @@
 async function feed() {
+    // Don't fetch if disabled
+    if (document.getElementById("feed").dataset.status === "false") return;
     // Fetch feeds
     const feeds = await Promise.all(FEEDS.map(url => fetch(url)));
     // Parse feeds as text
