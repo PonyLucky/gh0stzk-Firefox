@@ -245,8 +245,9 @@ function switchSearch() {
     else time.style.fontSize = "5rem";
 
     // If swithTime is also disabled, hide rule
+    const switchTime = document.getElementById("settings-time-switch").checked;
     const rule = document.getElementById("rule-main");
-    if (status && switchTime()) rule.classList.remove("hide");
+    if (status && switchTime) rule.classList.remove("hide");
     else rule.classList.add("hide");
 }
 
@@ -254,15 +255,26 @@ function switchTime() {
     let status = checkSwitch("time", "settings-time-switch");
 
     // If swithSearch is also disabled, hide rule
+    const switchSearch = document.getElementById("settings-search-switch").checked;
     const rule = document.getElementById("rule-main");
-    if (status && switchSearch()) rule.classList.remove("hide");
+    if (status && switchSearch) rule.classList.remove("hide");
     else rule.classList.add("hide");
 }
 
 function switchBookmarks() {
-    checkSwitch("bookmarks", "settings-bookmarks-switch");
+    let status = checkSwitch("bookmarks", "settings-bookmarks-switch");
+
+    // Hide rule #rule-feed
+    const rule = document.getElementById("rule-feed");
+    if (status) rule.classList.remove("hide");
+    else rule.classList.add("hide");
 }
 
 function switchNews() {
-    checkSwitch("feed", "settings-news-switch");
+    let status = checkSwitch("feed", "settings-news-switch");
+
+    // Hide rule #rule-feed
+    const rule = document.getElementById("rule-feed");
+    if (status) rule.classList.remove("hide");
+    else rule.classList.add("hide");
 }
