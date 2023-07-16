@@ -226,3 +226,43 @@ function importSettings() {
     // Click element
     element.click();
 }
+
+function checkSwitch(id, switchId) {
+    const elmt = document.getElementById(id);
+    const status = document.getElementById(switchId).checked;
+    elmt.setAttribute("data-status", status);
+    if (status) elmt.classList.remove("hide");
+    else elmt.classList.add("hide");
+    return status;
+}
+
+function switchSearch() {
+    let status = checkSwitch("search-form", "settings-search-switch");
+
+    // Big time if search is disabled
+    const time = document.getElementById("time");
+    if (status) time.removeAttribute("style");
+    else time.style.fontSize = "5rem";
+
+    // If swithTime is also disabled, hide rule
+    const rule = document.getElementById("rule-main");
+    if (status && switchTime()) rule.classList.remove("hide");
+    else rule.classList.add("hide");
+}
+
+function switchTime() {
+    let status = checkSwitch("time", "settings-time-switch");
+
+    // If swithSearch is also disabled, hide rule
+    const rule = document.getElementById("rule-main");
+    if (status && switchSearch()) rule.classList.remove("hide");
+    else rule.classList.add("hide");
+}
+
+function switchBookmarks() {
+    checkSwitch("bookmarks", "settings-bookmarks-switch");
+}
+
+function switchNews() {
+    checkSwitch("feed", "settings-news-switch");
+}

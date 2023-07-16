@@ -13,17 +13,10 @@ function updateTime () {
     const timeElement = document.getElementById("time");
     const timeMode = timeElement.dataset.mode;
     const timeFormat = timeElement.dataset.format;
+    const timeStatus = timeElement.dataset.status;
 
-    // If time mode "no"
-    if (timeMode == "no") {
-        // Hide time
-        timeElement.classList.add("hide");
-        return;
-    }
-    else {
-        // Show time
-        timeElement.classList.remove("hide");
-    }
+    // If time is disabled
+    if (timeStatus == "false") return;
 
     // Get time 12 hour format
     let time = new Date();

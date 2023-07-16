@@ -1,3 +1,6 @@
+// DEBUG
+const DEBUG_SETTINGS = true;
+
 // On window load
 window.onload = async function() {
     // Initialize
@@ -9,6 +12,16 @@ window.onload = async function() {
     handlers();
     // Await feed
     await feed();
+
+    // DEBUG
+    if (DEBUG_SETTINGS) {
+        // Display settings
+        personalize();
+        // Display bookmarks editor
+        // displayBookmarksEditor();
+        // Display news editor
+        // displayNewsEditor();
+    }
 }
 
 // Main function
@@ -50,6 +63,15 @@ function handlers() {
     attach("settings-export", exportSettings);
     attach("settings-fullscreen", settingsFS);
     attach("settings-close", personalize);
+
+    // Switches
+    function afterChange(id, handler) {
+        document.getElementById(id).addEventListener("change", handler);
+    }
+    afterChange("settings-search-switch", switchSearch);
+    afterChange("settings-time-switch", switchTime);
+    afterChange("settings-bookmarks-switch", switchBookmarks);
+    afterChange("settings-news-switch", switchNews);
 }
 
 function init() {
