@@ -33,6 +33,8 @@ async function feed() {
     if (uniqueItems.length === 0) {
         // Add hide class
         ruleFeed.classList.add("hide");
+        // Clear feed
+        document.getElementById("feed").innerHTML = "";
         return;
     }
     // Remove hide class
