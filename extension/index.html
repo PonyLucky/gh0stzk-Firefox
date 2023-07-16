@@ -37,7 +37,7 @@
         </form>
     </nav>
     <main>
-        <hr>
+        <hr id="rule-main" class="hide">
         <section id="bookmarks">
         </section>
         <hr id="rule-feed" class="hide">
@@ -62,17 +62,21 @@
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960"><path d="M796 935 533 672q-30 26-69.959 40.5T378 727q-108.162 0-183.081-75Q120 577 120 471t75-181q75-75 181.5-75t181 75Q632 365 632 471.15 632 514 618 554q-14 40-42 75l264 262-44 44ZM377 667q81.25 0 138.125-57.5T572 471q0-81-56.875-138.5T377 275q-82.083 0-139.542 57.5Q180 390 180 471t57.458 138.5Q294.917 667 377 667Z"/></svg>
                         <span>Search</span>
                     </h2>
-                    <select id="settings-search">
-                        <option value="https://www.google.com/search">Google</option>
-                        <option value="https://duckduckgo.com/">DuckDuckGo</option>
-                        <option value="https://www.bing.com/search">Bing</option>
-                        <option value="https://search.yahoo.com/search">Yahoo</option>
-                        <option value="https://www.ecosia.org/search">Ecosia</option>
-                        <option value="https://www.qwant.com/">Qwant</option>
-                        <option value="https://www.startpage.com/do/search">Startpage</option>
-                        <option value="https://you.com/search?q=">You</option>
-                        <option value="https://www.phind.com/search">Phind</option>
-                    </select>
+                    <div>
+                        <select id="settings-search">
+                            <option value="https://www.google.com/search">Google</option>
+                            <option value="https://duckduckgo.com/">DuckDuckGo</option>
+                            <option value="https://www.bing.com/search">Bing</option>
+                            <option value="https://search.yahoo.com/search">Yahoo</option>
+                            <option value="https://www.ecosia.org/search">Ecosia</option>
+                            <option value="https://www.qwant.com/">Qwant</option>
+                            <option value="https://www.startpage.com/do/search">Startpage</option>
+                            <option value="https://you.com/search?q=">You</option>
+                            <option value="https://www.phind.com/search">Phind</option>
+                        </select>
+                        <input type="checkbox" id="settings-search-switch" checked>
+                        <label for="settings-search-switch"></label>
+                    </div>
                 </li>
                 <li>
                     <h2>
@@ -83,9 +87,10 @@
                         <select id="settings-time-mode">
                             <option value="pulse">Pulse</option>
                             <option value="static">Static</option>
-                            <option value="no">Hide</option>
                         </select>
                         <button id="settings-time-format">24h</button>
+                        <input type="checkbox" id="settings-time-switch" checked>
+                        <label for="settings-time-switch"></label>
                     </div>
                 </li>
                 <li>
@@ -93,7 +98,11 @@
                         <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="48"><path d="M220 976q-24 0-42-18t-18-42V236q0-24 18-42t42-18h520q24 0 42 18t18 42v680q0 24-18 42t-42 18H220Zm266-474 97-56 97 56V236H486v266Z"/></svg>
                         <span>Bookmarks</span>
                     </h2>
-                    <button id="settings-bookmarks">Edit</button>
+                    <div>
+                        <button id="settings-bookmarks">Edit</button>
+                        <input type="checkbox" id="settings-bookmarks-switch" checked>
+                        <label for="settings-bookmarks-switch"></label>
+                    </div>
                 </li>
                 <li class="settings-content hide">
                     <textarea id="settings-bookmarks-edit" rows="20" wrap="off" spellcheck="false" autocorrect="off" autocomplete="off"></textarea>
@@ -108,7 +117,11 @@
                         <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="48"><path d="M218 936q-41 0-69.5-28.5T120 838q0-41 28.5-69.5T218 740q41 0 69.5 28.5T316 838q0 41-28.5 69.5T218 936Zm492 0q0-122-46.5-229.5T537 519q-80-80-187.5-126.5T120 346v-90q141 0 264.5 53.5t216 146q92.5 92.5 146 216T800 936h-90Zm-238 0q0-158-97-259T120 576v-90q97 0 178 34t139.5 94Q496 674 529 756.5T562 936h-90Z"/></svg>
                         <span>News</span>
                     </h2>
-                    <button id="settings-news">Edit</button>
+                    <div>
+                        <button id="settings-news">Edit</button>
+                        <input type="checkbox" id="settings-news-switch" checked>
+                        <label for="settings-news-switch"></label>
+                    </div>
                 </li>
                 <li class="settings-content hide">
                     <textarea id="settings-news-edit" rows="20" wrap="off" spellcheck="false" autocorrect="off" autocomplete="off"></textarea>

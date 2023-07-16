@@ -53,6 +53,43 @@
             color: black;
         }
     }
+    & input[type="checkbox"] {
+        display: none;
+
+        & + label {
+            cursor: pointer;
+            display: inline-block;
+            padding: 0.5rem;
+            padding-bottom: 0.3rem;
+            margin-bottom: 0.075rem;
+            border-radius: 1rem;
+            width: 1.2rem;
+            height: 1rem;
+            text-align: center;
+            vertical-align: bottom;
+            border: 1px solid rgba(var(--homepage-text-primary-rgb), 0.5);
+
+            &:hover {
+                color: var(--homepage-text-secondary);
+            }
+            &:after {
+                content: "\2716";
+                position: relative;
+                top: -0.25rem;
+            }
+        }
+
+        &:checked + label {
+            background-color: var(--homepage-bg-focus) !important;
+            color: var(--homepage-text-active);
+            fill: var(--homepage-text-active);
+            border: 1px solid #00000000;
+
+            &:after {
+                content: "\2714";
+            }
+        }
+    }
     & > ul {
         list-style: none;
         padding: 0;

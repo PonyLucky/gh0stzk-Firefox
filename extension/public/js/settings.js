@@ -226,3 +226,67 @@ function importSettings() {
     // Click element
     element.click();
 }
+
+function checkSwitch(id, switchId) {
+    const elmt = document.getElementById(id);
+    const status = document.getElementById(switchId).checked;
+    elmt.setAttribute("data-status", status);
+    if (status) elmt.classList.remove("hide");
+    else elmt.classList.add("hide");
+    return status;
+}
+
+function switchSearch() {
+    let status = checkSwitch("search-form", "settings-search-switch");
+
+    // Big time if search is disabled
+    const time = document.getElementById("time");
+    if (status) time.removeAttribute("style");
+    else time.style.fontSize = "5rem";
+
+    // If swithTime is also disabled, hide rule
+    const switchTime = document.getElementById("settings-time-switch").checked;
+    const rule = document.getElementById("rule-main");
+    if (!status && !switchTime) rule.classList.add("hide");
+    else rule.classList.remove("hide");
+
+    // Save search status
+    localStorage.setItem("searchStatus", status);
+}
+
+function switchTime() {
+    let status = checkSwitch("time", "settings-time-switch");
+
+    // If swithSearch is also disabled, hide rule
+    const switchSearch = document.getElementById("settings-search-switch").checked;
+    const rule = document.getElementById("rule-main");
+    if (!status && !switchSearch) rule.classList.add("hide");
+    else rule.classList.remove("hide");
+
+    // Save time status
+    localStorage.setItem("timeStatus", status);
+}
+
+function switchBookmarks() {
+    let status = checkSwitch("bookmarks", "settings-bookmarks-switch");
+
+    // Hide rule #rule-feed
+    const rule = document.getElementById("rule-feed");
+    if (status) rule.classList.remove("hide");
+    else rule.classList.add("hide");
+
+    // Save bookmarks status
+    localStorage.setItem("bookmarksStatus", status);
+}
+
+function switchNews() {
+    let status = checkSwitch("feed", "settings-news-switch");
+
+    // Hide rule #rule-feed
+    const rule = document.getElementById("rule-feed");
+    if (status) rule.classList.remove("hide");
+    else rule.classList.add("hide");
+
+    // Save news status
+    localStorage.setItem("newsStatus", status);
+}
