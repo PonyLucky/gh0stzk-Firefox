@@ -1,6 +1,3 @@
-// DEBUG
-const DEBUG_SETTINGS = true;
-
 // On window load
 window.onload = async function() {
     // Initialize
@@ -12,16 +9,6 @@ window.onload = async function() {
     handlers();
     // Await feed
     await feed();
-
-    // DEBUG
-    if (DEBUG_SETTINGS) {
-        // Display settings
-        personalize();
-        // Display bookmarks editor
-        // displayBookmarksEditor();
-        // Display news editor
-        // displayNewsEditor();
-    }
 }
 
 // Main function
