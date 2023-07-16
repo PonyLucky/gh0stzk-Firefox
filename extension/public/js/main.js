@@ -79,14 +79,18 @@ function init() {
     const theme = localStorage.getItem("theme");
     // Get current search engine
     const searchEngine = localStorage.getItem("searchEngine");
+    const searchStatus = localStorage.getItem("searchStatus");
     // Get current time mode
     const timeMode = localStorage.getItem("timeMode");
+    const timeStatus = localStorage.getItem("timeStatus");
     // Get current time format
     const timeFormat = localStorage.getItem("timeFormat");
     // Get current bookmarks
     const bookmarks = localStorage.getItem("bookmarks");
+    const bookmarksStatus = localStorage.getItem("bookmarksStatus");
     // Get current news
     const news = localStorage.getItem("news");
+    const newsStatus = localStorage.getItem("newsStatus");
     // Set theme
     if (theme) {
         document.documentElement.setAttribute("data-theme", theme);
@@ -97,10 +101,20 @@ function init() {
         document.getElementById("search-form").action = searchEngine;
         document.getElementById("settings-search").value = searchEngine;
     }
+    // Set search status
+    if (searchStatus && searchStatus != "null") {
+        document.getElementById("settings-search-switch").checked = searchStatus == "true";
+        switchSearch();
+    }
     // Set time mode
     if (timeMode && timeMode != "null") {
         document.getElementById("time").setAttribute("data-mode", timeMode);
         document.getElementById("settings-time-mode").value = timeMode;
+    }
+    // Set time status
+    if (timeStatus && timeStatus != "null") {
+        document.getElementById("settings-time-switch").checked = timeStatus == "true";
+        switchTime();
     }
     // Set time format
     if (timeFormat && timeFormat != "null") {
@@ -118,6 +132,11 @@ function init() {
             localStorage.setItem("bookmarks", JSON.stringify(BOOKMARKS));
         }
     }
+    // Set bookmarks status
+    if (bookmarksStatus && bookmarksStatus != "null") {
+        document.getElementById("settings-bookmarks-switch").checked = bookmarksStatus == "true";
+        switchBookmarks();
+    }
     // Set news
     if (news && news != "null") {
         try {
@@ -128,6 +147,11 @@ function init() {
             // Reset news in local storage
             localStorage.setItem("news", JSON.stringify(FEEDS));
         }
+    }
+    // Set news status
+    if (newsStatus && newsStatus != "null") {
+        document.getElementById("settings-news-switch").checked = newsStatus == "true";
+        switchNews();
     }
     // Init CORS
     CORS.init();

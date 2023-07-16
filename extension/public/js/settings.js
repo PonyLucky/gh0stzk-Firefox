@@ -249,6 +249,9 @@ function switchSearch() {
     const rule = document.getElementById("rule-main");
     if (status && switchTime) rule.classList.remove("hide");
     else rule.classList.add("hide");
+
+    // Save search status
+    localStorage.setItem("searchStatus", status);
 }
 
 function switchTime() {
@@ -259,6 +262,9 @@ function switchTime() {
     const rule = document.getElementById("rule-main");
     if (status && switchSearch) rule.classList.remove("hide");
     else rule.classList.add("hide");
+
+    // Save time status
+    localStorage.setItem("timeStatus", status);
 }
 
 function switchBookmarks() {
@@ -268,6 +274,9 @@ function switchBookmarks() {
     const rule = document.getElementById("rule-feed");
     if (status) rule.classList.remove("hide");
     else rule.classList.add("hide");
+
+    // Save bookmarks status
+    localStorage.setItem("bookmarksStatus", status);
 }
 
 function switchNews() {
@@ -277,4 +286,7 @@ function switchNews() {
     const rule = document.getElementById("rule-feed");
     if (status) rule.classList.remove("hide");
     else rule.classList.add("hide");
+
+    // Save news status
+    localStorage.setItem("newsStatus", status);
 }
