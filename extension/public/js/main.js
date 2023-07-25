@@ -93,6 +93,10 @@ function init() {
         document.getElementById("settings-search-switch").checked = searchStatus == "true";
         switchSearch();
     }
+    else {
+        // Show rule as default is show all
+        document.getElementById("rule-main").classList.remove("hide");
+    }
     // Set time mode
     if (timeMode && timeMode != "null") {
         document.getElementById("time").setAttribute("data-mode", timeMode);
