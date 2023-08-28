@@ -103,6 +103,7 @@ Here is the list of icons included in the extension:
 | <img src="./public/img/website/twitch.svg" width="50"/> | `twitch.svg` |
 | <img src="./public/img/website/w3schools.svg" width="50"/> | `w3schools.svg` |
 | <img src="./public/img/website/wikipedia.svg" width="50"/> | `wikipedia.svg` |
+| <img src="./public/img/website/wikipedia-white.svg" width="50"/> | `wikipedia-white.svg` |
 | <img src="./public/img/website/youtube.svg" width="50"/> | `youtube.svg` |
 
 ## More
