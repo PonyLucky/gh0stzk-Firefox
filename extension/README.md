@@ -83,14 +83,26 @@ Here is the list of icons included in the extension:
 | Icon | Name |
 | ---- | ---- |
 | <img src="./public/img/website/amazon-prime-video.svg" width="50"/> | `amazon-prime-video.svg` |
+| <img src="./public/img/website/archlinux.svg" width="50"/> | `archlinux.svg` |
+| <img src="./public/img/website/binance.svg" width="50"/> | `binance.svg` |
+| <img src="./public/img/website/debian.svg" width="50"/> | `debian.svg` |
 | <img src="./public/img/website/disney-plus.svg" width="50"/> | `disney-plus.svg` |
 | <img src="./public/img/website/emby.svg" width="50"/> | `emby.svg` |
 | <img src="./public/img/website/gitea.svg" width="50"/> | `gitea.svg` |
 | <img src="./public/img/website/github.svg" width="50"/> | `github.svg` |
-| <img src="./public/img/website/mdn.png" width="50"/> | `mdn.svg` |
+| <img src="./public/img/website/gitlab.svg" width="50"/> | `gitlab.svg` |
+| <img src="./public/img/website/gmail.svg" width="50"/> | `gmail.svg` |
+| <img src="./public/img/website/google-drive.svg" width="50"/> | `google-drive.svg` |
+| <img src="./public/img/website/linkedin.svg" width="50"/> | `linkedin.svg` |
+| <img src="./public/img/website/mdn.png" width="50"/> | `mdn.png` |
+| <img src="./public/img/website/microsoft-azure.svg" width="50"/> | `microsoft-azure.svg` |
+| <img src="./public/img/website/microsoft.svg" width="50"/> | `microsoft.svg` |
 | <img src="./public/img/website/netflix.svg" width="50"/> | `netflix.svg` |
+| <img src="./public/img/website/overleaf.svg" width="50"/> | `overleaf.svg` |
+| <img src="./public/img/website/redhat.svg" width="50"/> | `redhat.svg` |
 | <img src="./public/img/website/twitch.svg" width="50"/> | `twitch.svg` |
 | <img src="./public/img/website/w3schools.svg" width="50"/> | `w3schools.svg` |
+| <img src="./public/img/website/wikipedia.svg" width="50"/> | `wikipedia.svg` |
 | <img src="./public/img/website/youtube.svg" width="50"/> | `youtube.svg` |
 
 ## More
