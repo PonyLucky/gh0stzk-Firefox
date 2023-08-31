@@ -1,1 +1,11 @@
-<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Unraid</title><path d="M11.406 8.528h1.17v6.926h-1.17zM1.17 15.454H0V8.528h1.17zm4.534.828h1.17v2.645h-1.17zm-2.86-2.969h1.169v4.282h-1.17zm5.703 0h1.17v4.282h-1.17zM22.83 8.528H24v6.926h-1.17zm-4.534-.81h-1.17V5.073h1.17zm2.86 2.95h-1.169V6.406h1.17zm-5.72 0h-1.17V6.406h1.17z"/></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#EA4738;}
+</style>
+<path class="st0" d="M11.4,8.5h1.2v6.9h-1.2V8.5z M1.2,15.5H0V8.5h1.2V15.5z M5.7,16.3h1.2v2.6H5.7V16.3z M2.8,13.3H4v4.3H2.8
+	L2.8,13.3z M8.5,13.3h1.2v4.3H8.5V13.3z M22.8,8.5H24v6.9h-1.2V8.5z M18.3,7.7h-1.2V5.1h1.2V7.7z M21.2,10.7H20V6.4h1.2L21.2,10.7z
+	 M15.4,10.7h-1.2V6.4h1.2V10.7z"/>
+</svg>
