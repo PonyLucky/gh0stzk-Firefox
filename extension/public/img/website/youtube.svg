@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<svg fill="#FFFFFF" viewBox="0 0 72 72" width="64px" height="64px" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <linearGradient gradientUnits="userSpaceOnUse" x1="36" y1="16" x2="36" y2="56" id="gradient-0">
-      <stop offset="0" style="stop-color: rgba(240, 40, 40, 1)"/>
-      <stop offset="1" style="stop-color: rgba(166, 12, 12, 1)"/>
-    </linearGradient>
-  </defs>
-  <rect x="26.221" y="26.977" width="19.558" height="18.046" style=""/>
-  <path d="M61.115,18.856C63.666,21.503,64,25.709,64,36s-0.334,14.497-2.885,17.144C58.563,55.791,55.906,56,36,56 s-22.563-0.209-25.115-2.856C8.334,50.497,8,46.291,8,36s0.334-14.497,2.885-17.144S16.094,16,36,16S58.563,16.209,61.115,18.856z M31.464,44.476l13.603-8.044l-13.603-7.918V44.476z" style="fill: url(#gradient-0);"/>
+<!-- Generator: Adobe Illustrator 27.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{fill:#FF1A1A;}
+</style>
+<rect x="23.3" y="24" class="st0" width="17.4" height="16"/>
+<path class="st1" d="M54.3,16.8c2.3,2.4,2.6,6.1,2.6,15.2s-0.3,12.9-2.6,15.2c-2.3,2.4-4.6,2.5-22.3,2.5s-20.1-0.2-22.3-2.5
+	C7.4,44.9,7.1,41.1,7.1,32s0.3-12.9,2.6-15.2c2.3-2.4,4.6-2.5,22.3-2.5S52.1,14.4,54.3,16.8z M28,39.5l12.1-7.2l-12.1-7V39.5z"/>
 </svg>

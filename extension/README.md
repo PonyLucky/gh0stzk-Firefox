@@ -82,31 +82,43 @@ Here is the list of icons included in the extension:
 
 | Icon | Name |
 | ---- | ---- |
+| <img src="./public/img/website/1337X.svg" width="50"/> | `1337X.svg` |
 | <img src="./public/img/website/amazon-prime-video.svg" width="50"/> | `amazon-prime-video.svg` |
 | <img src="./public/img/website/archlinux.svg" width="50"/> | `archlinux.svg` |
 | <img src="./public/img/website/binance.svg" width="50"/> | `binance.svg` |
+| <img src="./public/img/website/canal-plus.svg" width="50"/> | `canal-plus.svg` |
+| <img src="./public/img/website/canal-plus-white.svg" width="50"/> | `canal-plus-white.svg` |
 | <img src="./public/img/website/debian.svg" width="50"/> | `debian.svg` |
 | <img src="./public/img/website/disney-plus.svg" width="50"/> | `disney-plus.svg` |
 | <img src="./public/img/website/emby.svg" width="50"/> | `emby.svg` |
 | <img src="./public/img/website/facebook.svg" width="50"/> | `facebook.svg` |
+| <img src="./public/img/website/font-awesome.svg" width="50"/> | `font-awesome.svg` |
 | <img src="./public/img/website/gitea.svg" width="50"/> | `gitea.svg` |
 | <img src="./public/img/website/github.svg" width="50"/> | `github.svg` |
 | <img src="./public/img/website/gitlab.svg" width="50"/> | `gitlab.svg` |
 | <img src="./public/img/website/gmail.svg" width="50"/> | `gmail.svg` |
 | <img src="./public/img/website/google-drive.svg" width="50"/> | `google-drive.svg` |
 | <img src="./public/img/website/ibm.svg" width="50"/> | `ibm.svg` |
+| <img src="./public/img/website/jdownloader.svg" width="50"/> | `jdownloader.svg` |
 | <img src="./public/img/website/js-discord.svg" width="50"/> | `js-discord.svg` |
+| <img src="./public/img/website/linguee.svg" width="50"/> | `linguee.svg` |
 | <img src="./public/img/website/linkedin.svg" width="50"/> | `linkedin.svg` |
+| <img src="./public/img/website/lutris.svg" width="50"/> | `lutris.svg` |
+| <img src="./public/img/website/markdown.svg" width="50"/> | `markdown.svg` |
 | <img src="./public/img/website/materialize.svg" width="50"/> | `materialize.svg` |
 | <img src="./public/img/website/mdn.png" width="50"/> | `mdn.png` |
-| <img src="./public/img/website/microsoft-azure.svg" width="50"/> | `microsoft-azure.svg` |
 | <img src="./public/img/website/microsoft.svg" width="50"/> | `microsoft.svg` |
+| <img src="./public/img/website/microsoft-azure.svg" width="50"/> | `microsoft-azure.svg` |
+| <img src="./public/img/website/microsoft-teams.svg" width="50"/> | `microsoft-teams.svg` |
+| <img src="./public/img/website/microsoft-word.svg" width="50"/> | `microsoft-word.svg` |
 | <img src="./public/img/website/netflix.svg" width="50"/> | `netflix.svg` |
 | <img src="./public/img/website/openai.svg" width="50"/> | `openai.svg` |
 | <img src="./public/img/website/openai-white.svg" width="50"/> | `openai-white.svg` |
 | <img src="./public/img/website/overleaf.svg" width="50"/> | `overleaf.svg` |
 | <img src="./public/img/website/pixabay.svg" width="50"/> | `pixabay.svg` |
 | <img src="./public/img/website/pixabay-white.svg" width="50"/> | `pixabay-white.svg` |
+| <img src="./public/img/website/protondb.svg" width="50"/> | `protondb.svg` |
+| <img src="./public/img/website/protonmail.svg" width="50"/> | `protonmail.svg` |
 | <img src="./public/img/website/redhat.svg" width="50"/> | `redhat.svg` |
 | <img src="./public/img/website/slack.svg" width="50"/> | `slack.svg` |
 | <img src="./public/img/website/twitch.svg" width="50"/> | `twitch.svg` |
