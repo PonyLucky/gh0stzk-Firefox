@@ -54,7 +54,7 @@ Install the Firefox extension from [addons.mozilla.org](https://addons.mozilla.o
 Here is the format:
 
 ```json
-{
+[
   {
     "category": "The category name - e.g. 'Development'",
     "fullWidth": true, // Optional, default: false
@@ -73,7 +73,7 @@ Here is the format:
       }
     ]
   },
-}
+]
 ```
 
 ### Icons
@@ -105,12 +105,15 @@ Here is the list of icons included in the extension:
 | <img src="./public/img/website/linkedin.svg" width="50"/> | `linkedin.svg` |
 | <img src="./public/img/website/lutris.svg" width="50"/> | `lutris.svg` |
 | <img src="./public/img/website/markdown.svg" width="50"/> | `markdown.svg` |
+| <img src="./public/img/website/markdown-white.svg" width="50"/> | `markdown-white.svg` |
 | <img src="./public/img/website/materialize.svg" width="50"/> | `materialize.svg` |
 | <img src="./public/img/website/mdn.png" width="50"/> | `mdn.png` |
 | <img src="./public/img/website/microsoft.svg" width="50"/> | `microsoft.svg` |
 | <img src="./public/img/website/microsoft-azure.svg" width="50"/> | `microsoft-azure.svg` |
 | <img src="./public/img/website/microsoft-teams.svg" width="50"/> | `microsoft-teams.svg` |
+| <img src="./public/img/website/microsoft-teams-white.svg" width="50"/> | `microsoft-teams-white.svg` |
 | <img src="./public/img/website/microsoft-word.svg" width="50"/> | `microsoft-word.svg` |
+| <img src="./public/img/website/microsoft-word-white.svg" width="50"/> | `microsoft-word-white.svg` |
 | <img src="./public/img/website/netflix.svg" width="50"/> | `netflix.svg` |
 | <img src="./public/img/website/openai.svg" width="50"/> | `openai.svg` |
 | <img src="./public/img/website/openai-white.svg" width="50"/> | `openai-white.svg` |
