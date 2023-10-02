@@ -114,6 +114,7 @@ Here is the list of icons included in the extension:
 | <img src="./public/img/website/microsoft-teams-white.svg" width="50"/> | `microsoft-teams-white.svg` |
 | <img src="./public/img/website/microsoft-word.svg" width="50"/> | `microsoft-word.svg` |
 | <img src="./public/img/website/microsoft-word-white.svg" width="50"/> | `microsoft-word-white.svg` |
+| <img src="./public/img/website/moodle.svg" width="50"/> | `moodle.svg` |
 | <img src="./public/img/website/netflix.svg" width="50"/> | `netflix.svg` |
 | <img src="./public/img/website/openai.svg" width="50"/> | `openai.svg` |
 | <img src="./public/img/website/openai-white.svg" width="50"/> | `openai-white.svg` |
@@ -127,6 +128,7 @@ Here is the list of icons included in the extension:
 | <img src="./public/img/website/twitch.svg" width="50"/> | `twitch.svg` |
 | <img src="./public/img/website/vercel.svg" width="50"/> | `vercel.svg` |
 | <img src="./public/img/website/vercel-white.svg" width="50"/> | `vercel-white.svg` |
+| <img src="./public/img/website/whatsapp.svg" width="50"/> | `whatsapp.svg` |
 | <img src="./public/img/website/w3schools.svg" width="50"/> | `w3schools.svg` |
 | <img src="./public/img/website/wikipedia.svg" width="50"/> | `wikipedia.svg` |
 | <img src="./public/img/website/wikipedia-white.svg" width="50"/> | `wikipedia-white.svg` |
