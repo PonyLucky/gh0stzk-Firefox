@@ -98,6 +98,7 @@ Here is the list of icons included in the extension:
 | <img src="./public/img/website/gitea.svg" width="50"/> | `gitea.svg` |
 | <img src="./public/img/website/github.svg" width="50"/> | `github.svg` |
 | <img src="./public/img/website/gitlab.svg" width="50"/> | `gitlab.svg` |
+| <img src="./public/img/website/glpi.svg" width="50"/> | `glpi.svg` |
 | <img src="./public/img/website/gmail.svg" width="50"/> | `gmail.svg` |
 | <img src="./public/img/website/google-drive.svg" width="50"/> | `google-drive.svg` |
 | <img src="./public/img/website/ibm.svg" width="50"/> | `ibm.svg` |
