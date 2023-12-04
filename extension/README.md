@@ -105,6 +105,7 @@ Here is the list of icons included in the extension:
 | <img src="./public/img/website/jdownloader.svg" width="50"/> | `jdownloader.svg` |
 | <img src="./public/img/website/jetbrains.svg" width="50"/> | `jetbrains.svg` |
 | <img src="./public/img/website/js-discord.svg" width="50"/> | `js-discord.svg` |
+| <img src="./public/img/website/kaggle.svg" width="50"/> | `kaggle.svg` |
 | <img src="./public/img/website/linguee.svg" width="50"/> | `linguee.svg` |
 | <img src="./public/img/website/linkedin.svg" width="50"/> | `linkedin.svg` |
 | <img src="./public/img/website/lutris.svg" width="50"/> | `lutris.svg` |
