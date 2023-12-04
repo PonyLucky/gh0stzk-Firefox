@@ -86,6 +86,7 @@ Here is the list of icons included in the extension:
 | <img src="./public/img/website/amazon-prime-video.svg" width="50"/> | `amazon-prime-video.svg` |
 | <img src="./public/img/website/archlinux.svg" width="50"/> | `archlinux.svg` |
 | <img src="./public/img/website/binance.svg" width="50"/> | `binance.svg` |
+| <img src="./public/img/website/bot-ghost.svg" width="50"/> | `bot-ghost.svg` |
 | <img src="./public/img/website/canal-plus.svg" width="50"/> | `canal-plus.svg` |
 | <img src="./public/img/website/canal-plus-white.svg" width="50"/> | `canal-plus-white.svg` |
 | <img src="./public/img/website/cardmarket.svg" width="50"/> | `cardmarket.svg` |
