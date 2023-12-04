@@ -88,6 +88,7 @@ Here is the list of icons included in the extension:
 | <img src="./public/img/website/binance.svg" width="50"/> | `binance.svg` |
 | <img src="./public/img/website/canal-plus.svg" width="50"/> | `canal-plus.svg` |
 | <img src="./public/img/website/canal-plus-white.svg" width="50"/> | `canal-plus-white.svg` |
+| <img src="./public/img/website/cardmarket.svg" width="50"/> | `cardmarket.svg` |
 | <img src="./public/img/website/debian.svg" width="50"/> | `debian.svg` |
 | <img src="./public/img/website/disney-plus.svg" width="50"/> | `disney-plus.svg` |
 | <img src="./public/img/website/emby.svg" width="50"/> | `emby.svg` |
