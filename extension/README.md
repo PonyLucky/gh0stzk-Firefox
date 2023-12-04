@@ -116,6 +116,7 @@ Here is the list of icons included in the extension:
 | <img src="./public/img/website/microsoft-word-white.svg" width="50"/> | `microsoft-word-white.svg` |
 | <img src="./public/img/website/moodle.svg" width="50"/> | `moodle.svg` |
 | <img src="./public/img/website/netflix.svg" width="50"/> | `netflix.svg` |
+| <img src="./public/img/website/nexus-mods.svg" width="50"/> | `nexus-mods.svg` |
 | <img src="./public/img/website/openai.svg" width="50"/> | `openai.svg` |
 | <img src="./public/img/website/openai-white.svg" width="50"/> | `openai-white.svg` |
 | <img src="./public/img/website/overleaf.svg" width="50"/> | `overleaf.svg` |
@@ -125,6 +126,7 @@ Here is the list of icons included in the extension:
 | <img src="./public/img/website/protonmail.svg" width="50"/> | `protonmail.svg` |
 | <img src="./public/img/website/redhat.svg" width="50"/> | `redhat.svg` |
 | <img src="./public/img/website/slack.svg" width="50"/> | `slack.svg` |
+| <img src="./public/img/website/tempmail.svg" width="50"/> | `tempmail.svg` |
 | <img src="./public/img/website/twitch.svg" width="50"/> | `twitch.svg` |
 | <img src="./public/img/website/vercel.svg" width="50"/> | `vercel.svg` |
 | <img src="./public/img/website/vercel-white.svg" width="50"/> | `vercel-white.svg` |
