@@ -103,6 +103,7 @@ Here is the list of icons included in the extension:
 | <img src="./public/img/website/google-drive.svg" width="50"/> | `google-drive.svg` |
 | <img src="./public/img/website/ibm.svg" width="50"/> | `ibm.svg` |
 | <img src="./public/img/website/jdownloader.svg" width="50"/> | `jdownloader.svg` |
+| <img src="./public/img/website/jetbrains.svg" width="50"/> | `jetbrains.svg` |
 | <img src="./public/img/website/js-discord.svg" width="50"/> | `js-discord.svg` |
 | <img src="./public/img/website/linguee.svg" width="50"/> | `linguee.svg` |
 | <img src="./public/img/website/linkedin.svg" width="50"/> | `linkedin.svg` |
