@@ -84,6 +84,8 @@ Here is the list of icons included in the extension:
 | ---- | ---- |
 | <img src="./public/img/website/1337X.svg" width="50"/> | `1337X.svg` |
 | <img src="./public/img/website/amazon-prime-video.svg" width="50"/> | `amazon-prime-video.svg` |
+| <img src="./public/img/website/amazon.svg" width="50"/> | `amazon.svg` |
+| <img src="./public/img/website/amd.svg" width="50"/> | `amd.svg` |
 | <img src="./public/img/website/archlinux.svg" width="50"/> | `archlinux.svg` |
 | <img src="./public/img/website/binance.svg" width="50"/> | `binance.svg` |
 | <img src="./public/img/website/bot-ghost.svg" width="50"/> | `bot-ghost.svg` |
@@ -104,6 +106,7 @@ Here is the list of icons included in the extension:
 | <img src="./public/img/website/gmail.svg" width="50"/> | `gmail.svg` |
 | <img src="./public/img/website/google-drive.svg" width="50"/> | `google-drive.svg` |
 | <img src="./public/img/website/ibm.svg" width="50"/> | `ibm.svg` |
+| <img src="./public/img/website/intel.svg" width="50"/> | `intel.svg` |
 | <img src="./public/img/website/jdownloader.svg" width="50"/> | `jdownloader.svg` |
 | <img src="./public/img/website/jetbrains.svg" width="50"/> | `jetbrains.svg` |
 | <img src="./public/img/website/js-discord.svg" width="50"/> | `js-discord.svg` |
@@ -124,6 +127,7 @@ Here is the list of icons included in the extension:
 | <img src="./public/img/website/moodle.svg" width="50"/> | `moodle.svg` |
 | <img src="./public/img/website/netflix.svg" width="50"/> | `netflix.svg` |
 | <img src="./public/img/website/nexus-mods.svg" width="50"/> | `nexus-mods.svg` |
+| <img src="./public/img/website/nvidia.svg" width="50"/> | `nvidia.svg` |
 | <img src="./public/img/website/openai.svg" width="50"/> | `openai.svg` |
 | <img src="./public/img/website/openai-white.svg" width="50"/> | `openai-white.svg` |
 | <img src="./public/img/website/overleaf.svg" width="50"/> | `overleaf.svg` |
