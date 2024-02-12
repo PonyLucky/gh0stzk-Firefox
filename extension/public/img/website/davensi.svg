@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 36.866 37"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="davensi.svg"
+   inkscape:version="1.3.2 (091e20ef0f, 2023-11-25)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="31"
+     inkscape:cx="18.435484"
+     inkscape:cy="18.5"
+     inkscape:window-width="3440"
+     inkscape:window-height="1371"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1" />
+  <path
+     d="M 4.209 26.865 L 18.393 35.054 C 18.451 35.088 18.523 35.088 18.58 35.054 L 25.21 31.213 C 25.334 31.141 25.336 30.963 25.213 30.888 L 11.19 22.351 C 11.135 22.317 11.1 22.256 11.1 22.189 L 11.1 14.311 C 11.1 14.243 11.064 14.181 11.005 14.147 L 4.36 10.305 C 4.234 10.232 4.077 10.324 4.077 10.469 L 4.114 26.701 C 4.114 26.769 4.15 26.831 4.209 26.865 Z M 11.645 6.115 L 25.669 14.651 C 25.725 14.685 25.76 14.746 25.76 14.813 L 25.76 22.692 C 25.76 22.759 25.796 22.822 25.855 22.855 L 32.499 26.697 C 32.624 26.77 32.781 26.678 32.781 26.533 L 32.744 10.301 C 32.744 10.233 32.709 10.171 32.65 10.137 L 18.467 1.948 C 18.409 1.914 18.337 1.914 18.279 1.948 L 11.65 5.789 C 11.525 5.861 11.523 6.039 11.645 6.115 Z"
+     fill="rgb(255, 255, 255)"
+     id="path1"
+     style="fill:#000000;fill-opacity:1" />
+</svg>
