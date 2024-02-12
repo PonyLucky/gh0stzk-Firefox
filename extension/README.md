@@ -82,17 +82,21 @@ Here is the list of icons included in the extension:
 
 | Icon | Name |
 | ---- | ---- |
+| <img src="./public/img/website/1password.svg" width="50"/> | `1password.svg` |
 | <img src="./public/img/website/1337X.svg" width="50"/> | `1337X.svg` |
 | <img src="./public/img/website/amazon-prime-video.svg" width="50"/> | `amazon-prime-video.svg` |
 | <img src="./public/img/website/amazon.svg" width="50"/> | `amazon.svg` |
 | <img src="./public/img/website/amd.svg" width="50"/> | `amd.svg` |
 | <img src="./public/img/website/archlinux.svg" width="50"/> | `archlinux.svg` |
+| <img src="./public/img/website/aws.svg" width="50"/> | `aws.svg` |
 | <img src="./public/img/website/binance.svg" width="50"/> | `binance.svg` |
 | <img src="./public/img/website/bot-ghost.svg" width="50"/> | `bot-ghost.svg` |
 | <img src="./public/img/website/canal-plus.svg" width="50"/> | `canal-plus.svg` |
 | <img src="./public/img/website/canal-plus-white.svg" width="50"/> | `canal-plus-white.svg` |
 | <img src="./public/img/website/cardmarket.svg" width="50"/> | `cardmarket.svg` |
 | <img src="./public/img/website/cesi.svg" width="50"/> | `cesi.svg` |
+| <img src="./public/img/website/davensi.svg" width="50"/> | `davensi.svg` |
+| <img src="./public/img/website/davensi-white.svg" width="50"/> | `davensi-white.svg` |
 | <img src="./public/img/website/debian.svg" width="50"/> | `debian.svg` |
 | <img src="./public/img/website/disney-plus.svg" width="50"/> | `disney-plus.svg` |
 | <img src="./public/img/website/emby.svg" width="50"/> | `emby.svg` |
@@ -133,10 +137,13 @@ Here is the list of icons included in the extension:
 | <img src="./public/img/website/overleaf.svg" width="50"/> | `overleaf.svg` |
 | <img src="./public/img/website/pixabay.svg" width="50"/> | `pixabay.svg` |
 | <img src="./public/img/website/pixabay-white.svg" width="50"/> | `pixabay-white.svg` |
+| <img src="./public/img/website/plex.svg" width="50"/> | `plex.svg` |
 | <img src="./public/img/website/protondb.svg" width="50"/> | `protondb.svg` |
 | <img src="./public/img/website/protonmail.svg" width="50"/> | `protonmail.svg` |
 | <img src="./public/img/website/redhat.svg" width="50"/> | `redhat.svg` |
+| <img src="./public/img/website/router.svg" width="50"/> | `router.svg` |
 | <img src="./public/img/website/slack.svg" width="50"/> | `slack.svg` |
+| <img src="./public/img/website/synology.svg" width="50"/> | `synology.svg` |
 | <img src="./public/img/website/tempmail.svg" width="50"/> | `tempmail.svg` |
 | <img src="./public/img/website/twitch.svg" width="50"/> | `twitch.svg` |
 | <img src="./public/img/website/vercel.svg" width="50"/> | `vercel.svg` |
