@@ -128,6 +128,7 @@ Here is the list of icons included in the extension:
 | <img src="./public/img/website/microsoft-teams-white.svg" width="50"/> | `microsoft-teams-white.svg` |
 | <img src="./public/img/website/microsoft-word.svg" width="50"/> | `microsoft-word.svg` |
 | <img src="./public/img/website/microsoft-word-white.svg" width="50"/> | `microsoft-word-white.svg` |
+| <img src="./public/img/website/miro.svg" width="50"/> | `miro.svg` |
 | <img src="./public/img/website/moodle.svg" width="50"/> | `moodle.svg` |
 | <img src="./public/img/website/netflix.svg" width="50"/> | `netflix.svg` |
 | <img src="./public/img/website/nexus-mods.svg" width="50"/> | `nexus-mods.svg` |
@@ -138,13 +139,16 @@ Here is the list of icons included in the extension:
 | <img src="./public/img/website/pixabay.svg" width="50"/> | `pixabay.svg` |
 | <img src="./public/img/website/pixabay-white.svg" width="50"/> | `pixabay-white.svg` |
 | <img src="./public/img/website/plex.svg" width="50"/> | `plex.svg` |
+| <img src="./public/img/website/proton-mail.svg" width="50"/> | `proton-mail.svg` |
+| <img src="./public/img/website/proton-pass.svg" width="50"/> | `proton-pass.svg` |
 | <img src="./public/img/website/protondb.svg" width="50"/> | `protondb.svg` |
-| <img src="./public/img/website/protonmail.svg" width="50"/> | `protonmail.svg` |
 | <img src="./public/img/website/redhat.svg" width="50"/> | `redhat.svg` |
 | <img src="./public/img/website/router.svg" width="50"/> | `router.svg` |
 | <img src="./public/img/website/slack.svg" width="50"/> | `slack.svg` |
+| <img src="./public/img/website/synaps.svg" width="50"/> | `synaps.svg` |
 | <img src="./public/img/website/synology.svg" width="50"/> | `synology.svg` |
 | <img src="./public/img/website/tempmail.svg" width="50"/> | `tempmail.svg` |
+| <img src="./public/img/website/trello.svg" width="50"/> | `trello.svg` |
 | <img src="./public/img/website/twitch.svg" width="50"/> | `twitch.svg` |
 | <img src="./public/img/website/vercel.svg" width="50"/> | `vercel.svg` |
 | <img src="./public/img/website/vercel-white.svg" width="50"/> | `vercel-white.svg` |

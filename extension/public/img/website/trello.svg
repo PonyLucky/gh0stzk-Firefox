@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   role="img"
+   height="36"
+   viewBox="0 0 89.142857 64"
+   width="36"
+   class="d-block"
+   version="1.1"
+   id="svg9"
+   sodipodi:docname="trello.svg"
+   inkscape:version="1.3.2 (091e20ef0f, 2023-11-25)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs9" />
+  <sodipodi:namedview
+     id="namedview9"
+     pagecolor="#ffffff"
+     bordercolor="#999999"
+     borderopacity="1"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="9.8968254"
+     inkscape:cx="63"
+     inkscape:cy="18.036087"
+     inkscape:window-width="2508"
+     inkscape:window-height="1412"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg9" />
+  <linearGradient
+     id="trello-logo-default"
+     x1="31.80974"
+     x2="31.80974"
+     y1="62.470139"
+     y2="0.070022576"
+     gradientTransform="scale(1.0003225,0.99967761)"
+     gradientUnits="userSpaceOnUse">
+    <stop
+       offset="0"
+       stop-color="#0052cc"
+       id="stop1" />
+    <stop
+       offset="1"
+       stop-color="#2684ff"
+       id="stop2" />
+  </linearGradient>
+  <g
+     fill="none"
+     fill-rule="evenodd"
+     id="g9"
+     transform="translate(12.061073)">
+    <path
+       d="M 55.59,0.07 H 8 C 3.9059492,0.07 0.58551759,3.3859529 0.57993927,7.48 V 55 C 0.57202245,56.973099 1.350247,58.868121 2.7426325,60.266137 4.1350181,61.664152 6.0268848,62.45 8,62.45 h 47.59 c 1.971382,-0.0026 3.860676,-0.789677 5.250897,-2.187403 C 62.231118,58.864871 63.007972,56.971367 63.000061,55 V 7.48 C 62.994491,3.3898539 59.680146,0.07550862 55.59,0.07 Z M 27.5,45 c -0.0026,0.659482 -0.267838,1.290754 -0.736972,1.754259 C 26.293894,47.217763 25.659466,47.475324 25,47.470081 H 14.6 C 13.239764,47.464493 12.14,46.360248 12.14,45 V 14.05 c 0,-1.360248 1.099764,-2.464493 2.46,-2.47 H 25 c 1.361867,0.0055 2.46452,1.108133 2.47,2.47 z m 24,-14.21 c 0,0.660316 -0.264297,1.293159 -0.73402,1.757246 C 50.296256,33.011333 49.660267,33.26802 49,33.260182 H 38.6 C 37.238133,33.25452 36.13548,32.151867 36.13,30.79 V 14.05 c 0.0055,-1.361867 1.108133,-2.46452 2.47,-2.47 H 49 c 1.360236,0.0055 2.460011,1.109752 2.46,2.47 z"
+       fill="url(#trello-logo-default)"
+       id="path2"
+       style="fill:url(#trello-logo-default)" />
+  </g>
+</svg>
